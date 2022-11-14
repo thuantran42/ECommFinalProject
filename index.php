@@ -1,3 +1,5 @@
+
+
 <?php require_once('header.php');?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,9 +13,22 @@
 </script>
 <body>
 
-    <div class = "text-center fw-bold text-uppercase">
-        <h1>Welcome to The Ice Scream Company</h1>
-        <img src="https://linkprodstorage.blob.core.windows.net/listing-235e1a0b-fbe7-e611-80f4-3863bb2e15c0/shutterstock423134989.jpg" alt="Ice Scream Image" style="height:500px;" /> <!-- image pointer-->
+    <div>
+        <div class="text-center fw-bold text-uppercase">
+            <h1>Welcome to The Ice Scream Company</h1>
+            <img src="https://linkprodstorage.blob.core.windows.net/listing-235e1a0b-fbe7-e611-80f4-3863bb2e15c0/shutterstock423134989.jpg" alt="Ice Scream Image" style="height:500px;" /> <!-- image pointer-->
+        </div>
+
+        <div class="text-center fw-bold text-uppercase">
+            <span>I scream! </span> <br />
+            <span>You scream! </span> <br />
+            <span>Give me that, Give me that Ice Scream! </span> <br />
+           
+           
+
+        </div>
+
+
     </div>
 
   
