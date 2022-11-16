@@ -31,7 +31,7 @@
         <div>
             <hr />
             Footer area <br />
-            Copyright reserved bh Trae Tran
+            Copyright reserved by Trae Tran
 
         </div>
 
