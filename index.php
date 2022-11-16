@@ -14,17 +14,24 @@
 <body>
 
     <div>
-        <div class="text-center fw-bold text-uppercase">
+        <div class="text-center fw-bold text-uppercase"> <!-- Title with Picture-->
             <h1>Welcome to The Ice Scream Company</h1>
             <img src="https://linkprodstorage.blob.core.windows.net/listing-235e1a0b-fbe7-e611-80f4-3863bb2e15c0/shutterstock423134989.jpg" alt="Ice Scream Image" style="height:500px;" /> <!-- image pointer-->
         </div>
 
-        <div class="text-center fw-bold text-uppercase">
+
+        <div class="text-center fw-bold text-uppercase"> <!-- catch phrase-->
             <span>I scream! </span> <br />
             <span>You scream! </span> <br />
             <span>Give me that, Give me that Ice Scream! </span> <br />
            
-           
+
+        </div>
+
+        <div>
+            <hr />
+            Footer area <br />
+            Copyright reserved bh Trae Tran
 
         </div>
 
