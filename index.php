@@ -16,7 +16,7 @@
     <div>
         <div class="text-center fw-bold text-uppercase"> <!-- Title with Picture-->
             <h1>Welcome to The Ice Scream Company</h1>
-            <img src="https://linkprodstorage.blob.core.windows.net/listing-235e1a0b-fbe7-e611-80f4-3863bb2e15c0/shutterstock423134989.jpg" alt="Ice Scream Image" style="height:500px;" /> <!-- image pointer-->
+            <img src="https://lh6.googleusercontent.com/Rky71NXiIOF9NrJlzJcaSs9sp3A0j3_eRz3jkbS4hnr3ry7ArbSbyIzOGFiltXTvmpPD2YFRh_viT2mZKyvaVFnRdZddYRahbOlcQrWRhMuqa_xPVdwVsxjK4OBo8Ft_lTU7QBkz7gcj1VSLmloS9S-FYVHFuTjtmlP6ovRgsu3ovHHFE_Aje7lz8Zx8Ug" alt="Ice Scream Image" style="height:500px;" /> <!-- image pointer-->
         </div>
 
 
