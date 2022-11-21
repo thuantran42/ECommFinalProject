@@ -12,8 +12,7 @@
 <script>
     body
     {
-        background - image: url("https://img.freepik.com/free-vector/pink-topping-with-sprinkles-background_23-2148639893.jpg?w=1060&t=st=1669070048~exp=1669070648~hmac=19bae5acf5d7e587f01bea58668133e22c03466bd3906ef3b5585e03de79b6e7");
-    }
+        background-image: url("https://i.pinimg.com/originals/d8/50/69/d850698ab4cb56b9b5ee61974ac1d19c.jpg");
 </script>
 <body>
 
