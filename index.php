@@ -13,6 +13,7 @@
     body
     {
         background-image: url("https://i.pinimg.com/originals/d8/50/69/d850698ab4cb56b9b5ee61974ac1d19c.jpg");
+    }
 </script>
 <body>
 
