@@ -1,5 +1,6 @@
 
 
+
 <?php require_once('header.php');?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,9 +14,17 @@
 </script>
 <body>
 
-    <div>
+    <div> <!-- One whole main div for general format-->
+    <img src="https://img.freepik.com/free-vector/pink-topping-with-sprinkles-background_23-2148639893.jpg?w=1060&t=st=1669070048~exp=1669070648~hmac=19bae5acf5d7e587f01bea58668133e22c03466bd3906ef3b5585e03de79b6e7" alt="Ice scream background" style="width:1000px;"/>
+
         <div class="text-center fw-bold text-uppercase"> <!-- Title with Picture-->
             <h1>Welcome to The Ice Scream Company</h1>
+            
+        </div>
+
+
+        <div>
+
             <img src="https://lh6.googleusercontent.com/Rky71NXiIOF9NrJlzJcaSs9sp3A0j3_eRz3jkbS4hnr3ry7ArbSbyIzOGFiltXTvmpPD2YFRh_viT2mZKyvaVFnRdZddYRahbOlcQrWRhMuqa_xPVdwVsxjK4OBo8Ft_lTU7QBkz7gcj1VSLmloS9S-FYVHFuTjtmlP6ovRgsu3ovHHFE_Aje7lz8Zx8Ug" alt="Ice Scream Image" style="height:500px;" /> <!-- image pointer-->
         </div>
 
