@@ -14,7 +14,7 @@
 </script>
 <body>
 
-    <div img src="https://img.freepik.com/free-vector/pink-topping-with-sprinkles-background_23-2148639893.jpg?w=1060&t=st=1669070048~exp=1669070648~hmac=19bae5acf5d7e587f01bea58668133e22c03466bd3906ef3b5585e03de79b6e7" alt="Ice scream background" style="width:1000px;"/>> <!-- One whole main div for general format-->
+    <div img src="https://img.freepik.com/free-vector/pink-topping-with-sprinkles-background_23-2148639893.jpg?w=1060&t=st=1669070048~exp=1669070648~hmac=19bae5acf5d7e587f01bea58668133e22c03466bd3906ef3b5585e03de79b6e7" alt="Ice scream background" style="width:1000px;"/> <!-- One whole main div for general format-->
     
 
         <div class="text-center fw-bold text-uppercase"> <!-- Title with Picture-->
