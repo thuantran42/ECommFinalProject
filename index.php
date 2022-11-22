@@ -46,12 +46,12 @@
 
         <div> <!-- footer divs -->
             <hr />
-            <span style="margin-left: 5px;">Privacy Policy </span> 
-            <span style="margin-left: 5px;">Terms & Conditions</span>
-            <span style="margin-left: 5px;">Do Not Sell or Share My Personal Information</span>
-            <span style="margin-left: 5px;">Cookie Settings</span>
+            <span >Privacy Policy </span> 
+            <span style="margin-left: 100px;">Terms & Conditions</span>
+            <span style="margin-left: 100px;">Do Not Sell or Share My Personal Information</span> <br />
+            <span style="margin-left: 50px;">Cookie Settings</span>
             
-            <span style="margin-left: 5px;">@2018 - 2022 The Ice Scream Comapny Inc.</span>
+            <span style="margin-left: 50px;">@2018 - 2022 The Ice Scream Comapny Inc.</span>
 
         </div>
 
