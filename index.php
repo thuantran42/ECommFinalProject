@@ -9,9 +9,14 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
-<script>
-       
+
+
+<script> /* Script tag */
+    
+
 </script>
+
+
 <body>
 
     <div>
@@ -41,13 +46,12 @@
 
         <div> <!-- footer divs -->
             <hr />
-            <span>Privacy Policy </span> <br />
-            <span>Terms of use</span>
-            <span>Terms & Conditions</span>
-            <span>Do Not Sell or Share My Personal Information</span>
-            <span>Cookie Settings</span>
+            <span style="margin-left: 5px;">Privacy Policy </span> 
+            <span style="margin-left: 5px;">Terms & Conditions</span>
+            <span style="margin-left: 5px;">Do Not Sell or Share My Personal Information</span>
+            <span style="margin-left: 5px;">Cookie Settings</span>
             
-            <span>@2018 - 2022 The Ice Scream Comapny Inc.</span>
+            <span style="margin-left: 5px;">@2018 - 2022 The Ice Scream Comapny Inc.</span>
 
         </div>
 
