@@ -51,7 +51,7 @@
             <span style="margin-left: 500px;">Do Not Sell or Share My Personal Information</span> <br />
             <span> Cookie Settings</span>
             
-            <span style="margin-left: 500px;">@2018 - 2022 The Ice Scream Comapny Inc.</span>
+            <span style="margin-left: 480px;">@2018 - 2022 The Ice Scream Comapny Inc.</span>
 
         </div>
 
