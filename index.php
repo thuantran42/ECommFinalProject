@@ -42,10 +42,15 @@
 
         </div>
 
-        <div>
+        <div> <!-- footer divs -->
             <hr />
-            Footer area <br />
-            Copyright reserved by Trae Tran
+            <div>Privacy Policy </div> <br />
+            <div>Terms of use</div>
+            <div>Terms & Conditions</div>
+            <div>Do Not Sell or Share My Personal Information</div>
+            <div>Cookie Settings</div>
+            
+            <div>Copyright reserved by Trae Tran</div>
 
         </div>
 
