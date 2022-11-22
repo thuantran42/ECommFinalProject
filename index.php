@@ -10,15 +10,12 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
 <script>
-        body {
-            background-image: url("https://i.pinimg.com/originals/d8/50/69/d850698ab4cb56b9b5ee61974ac1d19c.jpg");
-        }
+       
 </script>
 <body>
 
     <div>
-        <!-- One whole main div for general format-->
-        <!--<img src="https://img.freepik.com/free-vector/pink-topping-with-sprinkles-background_23-2148639893.jpg?w=1060&t=st=1669070048~exp=1669070648~hmac=19bae5acf5d7e587f01bea58668133e22c03466bd3906ef3b5585e03de79b6e7" alt="Ice scream background" style="width:1000px;" />-->
+        
 
         <div style="color:lightpink;" class="text-center fw-bold text-uppercase">
             <!-- Title with Picture-->
@@ -44,13 +41,13 @@
 
         <div> <!-- footer divs -->
             <hr />
-            <div>Privacy Policy </div> <br />
-            <div>Terms of use</div>
-            <div>Terms & Conditions</div>
-            <div>Do Not Sell or Share My Personal Information</div>
-            <div>Cookie Settings</div>
+            <span>Privacy Policy </span> <br />
+            <span>Terms of use</span>
+            <span>Terms & Conditions</span>
+            <span>Do Not Sell or Share My Personal Information</span>
+            <span>Cookie Settings</span>
             
-            <div>Copyright reserved by Trae Tran</div>
+            <span>@2018 - 2022 The Ice Scream Comapny Inc.</span>
 
         </div>
 
