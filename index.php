@@ -20,6 +20,9 @@
         /*background-color: #cccccc;*/
         background-size: cover;
         background-repeat: no-repeat;
+        margin:auto;
+        background-position: center center;
+
     }
 </style>
 
