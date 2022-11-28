@@ -18,7 +18,8 @@
     body {
         background-image: url("https://img.freepik.com/free-vector/confetti-background_1048-7865.jpg?w=740&t=st=1669434268~exp=1669434868~hmac=769baab9295a48e4a300e4e0c9efd7cca933906626f8630687dec24764522ee2");
         /*background-color: #cccccc;*/
-        background-size:cover;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 </style>
 
