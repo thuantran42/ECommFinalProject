@@ -31,7 +31,7 @@
 
                     <li class="nav-item dropdown"> <!-- drop down menu part-->
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
+                          <h2>Dropdown</h2>
                      </a>
                         
                       
