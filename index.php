@@ -22,7 +22,7 @@
         background-repeat: no-repeat;
         /*margin:auto;*/
         /*background-position: center center;*/
-        background-attachment: fixed;
+        /*background-attachment: fixed;*/
     }
 </style>
 
