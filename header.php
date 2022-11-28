@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light" style="color:lightpink;" >
         <div class="container-fluid">
 
             <a class="navbar-brand" href="index.php"><img src="https://lh5.googleusercontent.com/0Ss3aPu0-u9uz0BgBv_fpYID4rGX-OCh50ZvSzP4kqGJvXbbaV7Q4XN4eskbVI2AOSvZfXCvTl2HrXpkE4s5vVwDZIm0w2Zr0Uic8R04kNCmeS9Pp3lnq7U6HAQ6n0cUY69HwhHPuh4qfS7m_Y-zpAFmwXhAhjz-A9rYToPNKseXcAl354wljqY-CcRiow" alt="Ice Scream Image" style="height:50px;"></a> 
@@ -23,11 +23,11 @@
                         <a class="nav-link active" aria-current="page" href="index.php">Home</a> <!-- go to home page -->
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item"> <!-- single-purpose link to another page -->
                         <a class="nav-link" href="index.php">Link</a>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown"> <!-- drop down menu part-->
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown
                         </a>
