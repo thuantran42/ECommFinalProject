@@ -36,7 +36,7 @@
 
         <div class="text-center" style="width:1000px; margin-left:auto;margin-right:auto;">
 
-            <img src="https://lh6.googleusercontent.com/Rky71NXiIOF9NrJlzJcaSs9sp3A0j3_eRz3jkbS4hnr3ry7ArbSbyIzOGFiltXTvmpPD2YFRh_viT2mZKyvaVFnRdZddYRahbOlcQrWRhMuqa_xPVdwVsxjK4OBo8Ft_lTU7QBkz7gcj1VSLmloS9S-FYVHFuTjtmlP6ovRgsu3ovHHFE_Aje7lz8Zx8Ug" alt="Ice Scream Image" style="height:500px;" /> <!-- image pointer-->
+            <img src="https://docs.google.com/document/d/e/2PACX-1vTG9nE6yNnW4xO2AdDKTfuU78o_nY3HLf3Qq8Mb1W9G2LnPxb3CzKgefX2BapJ54Appf46XM2XlCkxg/pub" alt="Ice Scream Image" style="height:500px;" /> <!-- image pointer-->
         </div>
 
 
