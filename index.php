@@ -53,15 +53,15 @@
             <!-- footer divs -->
             <hr />
             <div> <!-- first row divs in footer-->
-                <div style="width:400px;">
+                <div style="width: 400px; float: left;">
                     Privacy Policy
                 </div>
 
-                <div style="width:400px;">
+                <div style="width:400px; float:left;">
                     Terms & Conditions
                 </div>
 
-                <div style="width:400px;">
+                <div style="width: 400px; float: left;">
                     Do Not Sell or Share My Personal Information
                 </div>
 
