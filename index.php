@@ -18,6 +18,7 @@
     body {
         background-image: url("https://img.freepik.com/free-vector/confetti-background_1048-7865.jpg?w=740&t=st=1669434268~exp=1669434868~hmac=769baab9295a48e4a300e4e0c9efd7cca933906626f8630687dec24764522ee2");
         /*background-color: #cccccc;*/
+        background-size:cover;
     }
 </style>
 
@@ -34,7 +35,7 @@
         </div>-->
 
 
-        <div class="text-center" style="width:1200px; margin-left:auto;margin-right:auto;">
+        <div class="text-center" style="width:1200px; margin-left:auto;margin-right:auto; display:flex;">
 
             <img src="https://lh5.googleusercontent.com/0Y7oWA31FIRMs5w_WNBABK7_rABy_r7L6TBKWzXUC8vROi7FweARrXq-QdrHo4EXyFY5L0SCx2cHmQdtQJlfJFvHLEelTBTFcchTFhnjbCTRh716RwKIwZwyxbA53nWfEXszWwIFaD9AgsF5ZqDnFyyenhr2kgBqkS9UgUB_gnuqZt-4K77b9k_CuwRFow" alt="Ice Scream Image" style="height:500px;" > <!-- image pointer-->
         </div>
@@ -42,9 +43,9 @@
 
         <div class="text-center fw-bold text-uppercase">
             <!-- catch phrase-->
-            <span>I scream! </span> <br />
+            <span>"I scream! </span> <br />
             <span>You scream! </span> <br />
-            <span>Give me that, Give me that Ice Scream! </span> <br />
+            <span>Give me that, Give me that Ice Scream!" </span> <br />
 
 
         </div>
