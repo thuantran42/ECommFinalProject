@@ -22,17 +22,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a> <!-- go to home page -->
+                        <h2><a class="nav-link active" aria-current="page" href="index.php">Home</a></h2> <!-- go to home page -->
                     </li>
 
                     <li class="nav-item"> <!-- single-purpose link to another page -->
-                        <h1 onmouseover="style.color='red'" onmouseout="style.color='black'" style="color: black;"><a class="nav-link" href="index.php">Link</a></h1>
+                        <h2 onmouseover="style.color='red'" onmouseout="style.color='black'" style="color: black;"><a class="nav-link" href="index.php">Link</a></h2>
                     </li>
 
                     <li class="nav-item dropdown"> <!-- drop down menu part-->
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
+                    <h2><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                         </a>
+                        
+                        </h2>
+                        
                         <ul class="dropdown-menu">
 
                             <li><a class="dropdown-item" href="library1.html">Javascript library 1</a></li>
