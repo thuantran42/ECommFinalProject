@@ -36,7 +36,7 @@
 
         <div class="text-center" style="width:1000px; margin-left:auto;margin-right:auto;">
 
-            <img src="https://lh5.googleusercontent.com/0Ss3aPu0-u9uz0BgBv_fpYID4rGX-OCh50ZvSzP4kqGJvXbbaV7Q4XN4eskbVI2AOSvZfXCvTl2HrXpkE4s5vVwDZIm0w2Zr0Uic8R04kNCmeS9Pp3lnq7U6HAQ6n0cUY69HwhHPuh4qfS7m_Y-zpAFmwXhAhjz-A9rYToPNKseXcAl354wljqY-CcRiow" alt="Ice Scream Image" style="height:500px;" > <!-- image pointer-->
+            <img src="https://lh5.googleusercontent.com/0Y7oWA31FIRMs5w_WNBABK7_rABy_r7L6TBKWzXUC8vROi7FweARrXq-QdrHo4EXyFY5L0SCx2cHmQdtQJlfJFvHLEelTBTFcchTFhnjbCTRh716RwKIwZwyxbA53nWfEXszWwIFaD9AgsF5ZqDnFyyenhr2kgBqkS9UgUB_gnuqZt-4K77b9k_CuwRFow" alt="Ice Scream Image" style="height:500px;" > <!-- image pointer-->
         </div>
 
 
@@ -49,7 +49,7 @@
 
         </div>
 
-        <div> <!-- footer divs -->
+        <div class="fw-bold "> <!-- footer divs -->
             <hr />
             <span >Privacy Policy </span> 
             <span style="margin-left: 500px;">Terms & Conditions</span>
