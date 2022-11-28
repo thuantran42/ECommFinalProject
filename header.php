@@ -24,7 +24,7 @@
                     </li>
 
                     <li class="nav-item"> <!-- single-purpose link to another page -->
-                        <a class="nav-link" href="index.php">Link</a>
+                        <h1 onmouseover="style.color='red'" onmouseout="style.color='black'" style="color: black;"><a class="nav-link" href="index.php">Link</a></h1>
                     </li>
 
                     <li class="nav-item dropdown"> <!-- drop down menu part-->
