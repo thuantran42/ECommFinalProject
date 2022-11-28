@@ -11,7 +11,7 @@
     <nav class="navbar navbar-expand-lg bg-primary" >
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="index.php"><img src="https://lh5.googleusercontent.com/0Ss3aPu0-u9uz0BgBv_fpYID4rGX-OCh50ZvSzP4kqGJvXbbaV7Q4XN4eskbVI2AOSvZfXCvTl2HrXpkE4s5vVwDZIm0w2Zr0Uic8R04kNCmeS9Pp3lnq7U6HAQ6n0cUY69HwhHPuh4qfS7m_Y-zpAFmwXhAhjz-A9rYToPNKseXcAl354wljqY-CcRiow" alt="Ice Scream Image" style="height:50px;"></a> 
+            <a class="navbar-brand" href="index.php"><img src="https://lh5.googleusercontent.com/0Y7oWA31FIRMs5w_WNBABK7_rABy_r7L6TBKWzXUC8vROi7FweARrXq-QdrHo4EXyFY5L0SCx2cHmQdtQJlfJFvHLEelTBTFcchTFhnjbCTRh716RwKIwZwyxbA53nWfEXszWwIFaD9AgsF5ZqDnFyyenhr2kgBqkS9UgUB_gnuqZt-4K77b9k_CuwRFow" alt="Ice Scream Image" style="height:50px;"></a> 
             <!-- Logo brand in navbar -->
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
