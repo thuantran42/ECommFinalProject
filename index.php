@@ -21,8 +21,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         /*margin:auto;*/
-        background-position: center center;
-
+        /*background-position: center center;*/
+        background-attachment: fixed;
     }
 </style>
 
