@@ -52,17 +52,21 @@
         <div class="fw-bold ">
             <!-- footer divs -->
             <hr />
-            <div style="width:400px;">
-                Privacy Policy
-            </div>
+            <div> <!-- first row divs in footer-->
+                <div style="width:400px;">
+                    Privacy Policy
+                </div>
 
-            <div style="width:400px;">
-                Terms & Conditions
-            </div>
+                <div style="width:400px;">
+                    Terms & Conditions
+                </div>
 
-            <div style="width:400px;">
-                Do Not Sell or Share My Personal Information
+                <div style="width:400px;">
+                    Do Not Sell or Share My Personal Information
+                </div>
+
             </div>
+            
 
 
             <span> Cookie Settings</span> <!-- needs a next row div-->
