@@ -69,9 +69,18 @@
             
 
 
-            <span> Cookie Settings</span> <!-- needs a next row div-->
+            <div>
+                <div style="width: 400px; float: left;">
+                    Cookie Settings
+                </div>
 
-            <span style="margin-left: 480px;">@2018 - 2022 The Ice Scream Comapny Inc.</span> <!-- needs a next row div-->
+                <div style="width: 400px; float: left;">
+                    @2018 - 2022 The Ice Scream Comapny Inc.
+                </div>
+
+            </div> 
+
+            
 
         </div>
 
