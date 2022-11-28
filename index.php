@@ -34,7 +34,7 @@
         </div>-->
 
 
-        <div class="text-center" style="width:1000px; margin-left:auto;margin-right:auto;">
+        <div class="text-center" style="width:1200px; margin-left:auto;margin-right:auto;">
 
             <img src="https://lh5.googleusercontent.com/0Y7oWA31FIRMs5w_WNBABK7_rABy_r7L6TBKWzXUC8vROi7FweARrXq-QdrHo4EXyFY5L0SCx2cHmQdtQJlfJFvHLEelTBTFcchTFhnjbCTRh716RwKIwZwyxbA53nWfEXszWwIFaD9AgsF5ZqDnFyyenhr2kgBqkS9UgUB_gnuqZt-4K77b9k_CuwRFow" alt="Ice Scream Image" style="height:500px;" > <!-- image pointer-->
         </div>
@@ -49,14 +49,25 @@
 
         </div>
 
-        <div class="fw-bold "> <!-- footer divs -->
+        <div class="fw-bold ">
+            <!-- footer divs -->
             <hr />
-            <span >Privacy Policy </span> 
-            <span style="margin-left: 500px;">Terms & Conditions</span>
-            <span style="margin-left: 500px;">Do Not Sell or Share My Personal Information</span> <br />
-            <span> Cookie Settings</span>
-            
-            <span style="margin-left: 480px;">@2018 - 2022 The Ice Scream Comapny Inc.</span>
+            <div style="width:400px;">
+                Privacy Policy
+            </div>
+
+            <div style="width:400px;">
+                Terms & Conditions
+            </div>
+
+            <div style="width:400px;">
+                Do Not Sell or Share My Personal Information
+            </div>
+
+
+            <span> Cookie Settings</span> <!-- needs a next row div-->
+
+            <span style="margin-left: 480px;">@2018 - 2022 The Ice Scream Comapny Inc.</span> <!-- needs a next row div-->
 
         </div>
 
