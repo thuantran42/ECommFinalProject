@@ -12,16 +12,21 @@
 
 
 <script> /* Script tag */
-    
-
 </script>
+
+<style>
+    body {
+        background-image: url("https://img.freepik.com/free-vector/confetti-background_1048-7865.jpg?w=740&t=st=1669434268~exp=1669434868~hmac=769baab9295a48e4a300e4e0c9efd7cca933906626f8630687dec24764522ee2");
+        /*background-color: #cccccc;*/
+    }
+</style>
 
 
 <body>
 
     <div>
         
-
+        <!-- you can experiment opacity: 0.3 for transparency -->
         <div style="color:lightpink;" class="text-center fw-bold text-uppercase">
             <!-- Title with Picture-->
             <h1>Welcome to The Ice Scream Company</h1>
