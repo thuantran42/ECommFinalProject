@@ -29,7 +29,7 @@
         <!-- you can experiment opacity: 0.3 for transparency -->
         <div style="color:lightpink;" class="text-center fw-bold text-uppercase">
             <!-- Title with Picture-->
-            <h1>Welcome to The Ice Scream Company</h1>
+            <h1> <span class="badge bg-secondary">Welcome to The Ice Scream Company</span></h1>
 
         </div>
 
