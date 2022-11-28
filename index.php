@@ -1,60 +1,100 @@
-<!doctype html> <!-- This is the nav bar php -->
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ice Scream Company</title>
+<?php require_once('header.php');?>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<title>Ice Scream Company</title>
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
 
-    <nav class="navbar navbar-expand-lg bg-primary "  style="max-width: 100%;">
-        <div class="container-fluid">
-
-            <a class="navbar-brand" href="index.php">
-            <img src="https://lh4.googleusercontent.com/qPPSpyQ_5wq8NLWHvEFzkzeANDOsdJjKXwTDzxZHzVuFswO544iQn6WqZRFSEdL-0U-0oS_YMm1_3W3S_eQJ0QtTT505X2JZRxMnd3SOz117b8PTDViwcQMqmKvFCNrd7xBtycaYRVgULd0uYr7vrpyyi3_eAHtzUkTFnKRNmqfOP25HP7H2VwKh0aDcIw" alt="Ice Scream Image" style="height:50px;">
-            </a> 
-            <!-- Logo brand in navbar -->
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <h2><a class="nav-link active" aria-current="page" href="index.php">Home</a></h2> <!-- go to home page -->
-                    </li>
-
-                    <li class="nav-item"> <!-- single-purpose link to another page -->
-                        <h2 onmouseover="style.color='red'" onmouseout="style.color='black'" style="color: black;"><a class="nav-link" href="index.php">Link</a></h2>
-                    </li>
-
-                    <li class="nav-item dropdown"> <!-- drop down menu part-->
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                     </a>
-                        
-                      
-                        
-                        <ul class="dropdown-menu">
-
-                            <li><a class="dropdown-item" href="library1.html">Javascript library 1</a></li>
-                            <li><a class="dropdown-item" href="library2.html">Javascript library 2</a></li>
-                            <li><a class="dropdown-item" href="library3.html">Javascript library 3</a></li>
-                            <li><a class="dropdown-item" href="library4.html">Javascript library 4</a></li>
-                            <li><a class="dropdown-item" href="library5.html">Javascript library 5</a></li>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
 
 
-                        </ul>
-                    </li>
-                    
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-</head>
+<script> /* Script tag */
+</script>
+
+<style>
+    body {
+        background-image: url("https://img.freepik.com/free-vector/confetti-background_1048-7865.jpg?w=740&t=st=1669434268~exp=1669434868~hmac=769baab9295a48e4a300e4e0c9efd7cca933906626f8630687dec24764522ee2");
+        /*background-color: #cccccc;*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*margin:auto;*/
+        /*background-position: center center;*/
+        /*background-attachment: fixed;*/
+        
+    }
+</style>
+
+
 <body>
+
+    <div>
+        
+        <!-- you can experiment opacity: 0.3 for transparency -->
+        <!--<div style="color:lightpink;" class="text-center fw-bold text-uppercase">-->
+            <!-- Title with Picture-->
+            <!--<h1> <span class="badge bg-secondary">Welcome to The Ice Scream Company</span></h1>
+
+        </div>-->
+
+
+        <div class="text-center" style="width:1200px; margin-left:auto;margin-right:auto;">
+
+            <img src="https://lh5.googleusercontent.com/0Y7oWA31FIRMs5w_WNBABK7_rABy_r7L6TBKWzXUC8vROi7FweARrXq-QdrHo4EXyFY5L0SCx2cHmQdtQJlfJFvHLEelTBTFcchTFhnjbCTRh716RwKIwZwyxbA53nWfEXszWwIFaD9AgsF5ZqDnFyyenhr2kgBqkS9UgUB_gnuqZt-4K77b9k_CuwRFow" class="img-fluid" alt="Ice Scream Image" > <!-- image pointer-->
+        </div>
+
+
+        <div class="text-center fw-bold text-uppercase">
+            <!-- catch phrase-->
+            <span>"I scream! </span> <br />
+            <span>You scream! </span> <br />
+            <span>Give me that, Give me that Ice Scream!" </span> <br />
+
+
+        </div>
+
+        <div class="fw-bold ">
+            <!-- footer divs -->
+            <hr />
+            <div> <!-- first row divs in footer-->
+                <div style="width: 400px; float: left;">
+                    Privacy Policy
+                </div>
+
+                <div style="width:400px; float:left;">
+                    Terms & Conditions
+                </div>
+
+                <div style="width: 400px; float: left;">
+                    Do Not Sell or Share My Personal Information
+                </div>
+
+            </div>
+            
+
+
+            <div>
+                <div style="width: 400px; float: left;">
+                    Cookie Settings
+                </div>
+
+                <div style="width: 400px; float: left;">
+                    @2018 - 2022 The Ice Scream Comapny Inc.
+                </div>
+
+            </div> 
+
+            
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
