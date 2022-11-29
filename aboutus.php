@@ -35,31 +35,53 @@
         <!-- Title with Picture-->
         <!--<h1> <span class="badge bg-secondary">Welcome to The Ice Scream Company</span></h1>
 
-        </div>-->
+    </div>-->
+
+        <div class="card">
+            <div class="card-body">
+                This is some text within a card body.
+            </div>
+        </div>
 
         <div>
-            <span style="color:hotpink;">About Us</span>
+            <div class="card">
+                <div class="card-body">
 
-            <p>
-                Ice Scream was started in Oklahoma City, Oklahoma and it is founded by Trae Tran.
-                Trae Tran saw great ambition in creativity from low-end to high-end ice cream in hopes
-                to appeal to all ice cream lovers. The idea of the customer is always right has been 
-                fundamentally integrated into our creative ice creaming making system.
-            </p>
+
+                </div>
+
+                <div class="card-header">
+                    
+
+
+                </div>
+
+
+
+                <span style="color:hotpink;">About Us</span>
+
+                <p>
+                    Ice Scream was started in Oklahoma City, Oklahoma and it is founded by Trae Tran.
+                    Trae Tran saw great ambition in creativity from low-end to high-end ice cream in hopes
+                    to appeal to all ice cream lovers. The idea of the customer is always right has been
+                    fundamentally integrated into our creative ice creaming making system.
+                </p>
+            </div>
+
             <br />
             <p>
                 <span style="color:hotpink;">The Mission Statement </span>
-                <p>
+            <p>
                 The Ice Scream
                 Company's mission is to inspire one person, one scoop and one place at a time.
-                <p>
+            <p>
 
             </p>
         </div>
-        
 
 
-        
+
+
 
         <div class="fw-bold ">
             <!-- footer divs -->
