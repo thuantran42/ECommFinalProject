@@ -38,7 +38,7 @@
         </div>-->
 
         <div>
-            About Us
+            <span style="color:hotpink;">About Us</span>
 
             <p>
                 Ice Scream was started in Oklahoma City, Oklahoma and it is founded by Trae Tran.
@@ -48,10 +48,11 @@
             </p>
             <br />
             <p>
-                The Mission Statement
-
+                <span style="color:hotpink;">The Mission Statement </span>
+                <p>
                 The Ice Scream
                 Company's mission is to inspire one person, one scoop and one place at a time.
+                <p>
 
             </p>
         </div>
