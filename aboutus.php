@@ -66,58 +66,71 @@
             </div>
 
             <br />
-            <p>
-                <span style="color:hotpink;">The Mission Statement </span>
-            <p>
-                The Ice Scream
-                Company's mission is to inspire one person, one scoop and one place at a time.
-            <p>
 
-            </p>
-        </div>
-
-
-
-
-
-        <div class="fw-bold ">
-            <!-- footer divs -->
-            <hr />
             <div>
-                <!-- first row divs in footer-->
-                <div style="width: 400px; float: left;">
-                    Privacy Policy
-                </div>
+                <div class="card">
+                    <div class="card-header">
 
-                <div style="width:400px; float:left;">
-                    Terms & Conditions
-                </div>
+                        <span style="color:hotpink;">The Mission Statement</span>
 
-                <div style="width: 400px; float: left;">
-                    Do Not Sell or Share My Personal Information
-                </div>
+                    </div>
 
+                    <div class="card-body">
+                        <p>
+                            The Ice Scream
+                            Company's mission is to inspire one person, one scoop and one place at a time.
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+                
             </div>
 
 
 
-            <div>
-                <div style="width: 400px; float: left;">
-                    Cookie Settings
+
+
+            <div class="fw-bold ">
+                <!-- footer divs -->
+                <hr />
+                <div>
+                    <!-- first row divs in footer-->
+                    <div style="width: 400px; float: left;">
+                        Privacy Policy
+                    </div>
+
+                    <div style="width:400px; float:left;">
+                        Terms & Conditions
+                    </div>
+
+                    <div style="width: 400px; float: left;">
+                        Do Not Sell or Share My Personal Information
+                    </div>
+
                 </div>
 
-                <div style="width: 400px; float: left;">
-                    @2018 - 2022 The Ice Scream Comapny Inc.
+
+
+                <div>
+                    <div style="width: 400px; float: left;">
+                        Cookie Settings
+                    </div>
+
+                    <div style="width: 400px; float: left;">
+                        @2018 - 2022 The Ice Scream Comapny Inc.
+                    </div>
+
                 </div>
+
+
 
             </div>
 
 
-
         </div>
-
-
-    </div>
 
 
 
