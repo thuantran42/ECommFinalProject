@@ -37,11 +37,11 @@
 
     </div>-->
 
-        <div class="card">
+        <!--<div class="card">
             <div class="card-body">
                 This is some text within a card body.
             </div>
-        </div>
+        </div>-->
 
         <div>
             <div class="card">
@@ -52,13 +52,9 @@
 
                 <div class="card-header">
                     
-
+                    <span style="color:hotpink;">About Us</span>
 
                 </div>
-
-
-
-                <span style="color:hotpink;">About Us</span>
 
                 <p>
                     Ice Scream was started in Oklahoma City, Oklahoma and it is founded by Trae Tran.
