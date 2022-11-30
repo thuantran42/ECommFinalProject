@@ -49,7 +49,7 @@
                 <div class="card-header">
                     <img src="https://www.sciencenews.org/wp-content/uploads/2021/04/041221_AD_scream_feat_REV.jpg" class="card-img-top" alt="picture of Trae" style="height:100px; width:100px;">
 
-                    <h2 onmouseover="style.color='red'" onmouseout="style.color='black'" style="color: black;"><span style="color:hotpink;">About Us</span></h2>        <!-- about us -->
+                    <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">About Us</span>       <!-- about us -->
 
                 </div>
 
@@ -74,7 +74,7 @@
                     <div class="card-header">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsDoSlKbb2vejA8Cfh8jMMvaFSkackvBYH52lFsJIa7Lm6K1hZTqo_1E9b4rYVG0sU1U&usqp=CAU" class="card-img-top" alt="picture of Trae" style="height:100px; width:100px;">
 
-                        <span style="color:hotpink;">The Mission Statement</span> <!-- Mission statement -->
+                        <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">The Mission Statement</span> <!-- Mission statement -->
 
                     </div>
 
@@ -96,7 +96,7 @@
                 <div class="card">
                     <div class="card-header">
                         <img src="https://media-exp1.licdn.com/dms/image/C4E03AQH2lw-G4ZBFwg/profile-displayphoto-shrink_800_800/0/1592175896484?e=1675296000&v=beta&t=DmxAUUSIkdgI3VGwnwCstyY99Jgw6xvzK8166MlU8jw" class="card-img-top" alt="picture of Trae" style="height:100px; width:100px;">
-                        <span style="color:hotpink;">Something Icy about the Founder</span> <!-- Founder Bio/Auto -->
+                        <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Something Icy about the Founder</span> <!-- Founder Bio/Auto -->
 
                     </div>
 
