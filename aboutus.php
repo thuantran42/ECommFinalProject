@@ -141,10 +141,10 @@
                     Follow us on Linkedin, Instagram, Youtube, and Twitter! <br />
 
                     <br />
-                    <a href="https://www.linkedin.com/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgd4JdyuHOYjmtScEwT2PirsDOyS-6XTAIoA&usqp=CAU" alt="Linkedin link" /> </a> <br />
-                    <a href="https://www.instagram.com/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibNm4alTFbffyXvLcZgMEsrIqnyK66LeszQ&usqp=CAU" alt="Instgram link" /> </a> <br />
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQivdaPpv3KvpL8RUJFo-GLIO6LciuTLhdvVw&usqp=CAU" alt="Youtube link" /> </a> <br />
-                    <a href="https://twitter.com/"> <img src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" alt="Twitter link" /> </a> <br />
+                    <a href="https://www.linkedin.com/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgd4JdyuHOYjmtScEwT2PirsDOyS-6XTAIoA&usqp=CAU" alt="Linkedin link" style="height:50px; width:50px;" /> </a> 
+                    <a href="https://www.instagram.com/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibNm4alTFbffyXvLcZgMEsrIqnyK66LeszQ&usqp=CAU" alt="Instgram link" style="height:50px; width:50px;"/> </a> 
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQivdaPpv3KvpL8RUJFo-GLIO6LciuTLhdvVw&usqp=CAU" alt="Youtube link" style="height:50px; width:50px;"/> </a> 
+                    <a href="https://twitter.com/"> <img src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" alt="Twitter link" style="height:50px; width:50px;"/> </a>
                     
                 </p>
 
