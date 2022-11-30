@@ -39,7 +39,7 @@
                         
                         <ul class="dropdown-menu">
 
-                            <li><a class="dropdown-item" href="library1.html">Javascript library 1</a></li>
+                            <li><a class="dropdown-item" href="customer.php">Enter Your Info</a></li>
                             <li><a class="dropdown-item" href="library2.html">Javascript library 2</a></li>
                             <li><a class="dropdown-item" href="library3.html">Javascript library 3</a></li>
                             <li><a class="dropdown-item" href="library4.html">Javascript library 4</a></li>
