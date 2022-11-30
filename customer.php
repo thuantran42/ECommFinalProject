@@ -79,10 +79,9 @@
                 <td><?=$row["customer_id"]?></td>
                 <td><?=$row["customerName"]?></td>
                 <td>
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row[" customer_id"]?>
-                        Edit
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>"> Edit
                     </button>
-                    <div class="modal fade" id="editWeapons<?=$row[" customer_id"]?>
+                    <div class="modal fade" id="editWeapons<?=$row["customer_id"]?>
                         " data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editWeapons<?=$row["customer_id"]?>Label" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -94,8 +93,8 @@
                                     <form method="post" action="">
                                         <div class="mb-3">
                                             <label for="editWeapons<?=$row[" customer_id"]?>Name" class="form-label">Name</label>
-                                            <input type="text" class="form-control" id="editWeapons<?=$row[" customer_id"]?>Name" aria-describedby="editWeapons<?=$row["customer_id"]?>Help" name="iName" value="<?=$row['customerName']?>">
-                                            <div id="editWeapons<?=$row[" customer_id"]?>Help" class="form-text">Enter the weapon's name.</div>
+                                            <input type="text" class="form-control" id="editWeapons<?=$row["customer_id"]?>Name" aria-describedby="editWeapons<?=$row["customer_id"]?>Help" name="iName" value="<?=$row['customerName']?>">
+                                            <div id="editWeapons<?=$row[" customer_id"]?>Help" class="form-text">Enter the customer's name.</div>
                                         </div>
                                         <input type="hidden" name="iid" value="<?=$row['customer_id']?>">
                                         <input type="hidden" name="saveType" value="Edit">
