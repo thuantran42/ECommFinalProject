@@ -39,11 +39,11 @@
                         
                         <ul class="dropdown-menu">
 
-                            <li><a class="dropdown-item" href="customer.php">Enter Your Info</a></li>
-                            <li><a class="dropdown-item" href="library2.html">Javascript library 2</a></li>
-                            <li><a class="dropdown-item" href="library3.html">Javascript library 3</a></li>
-                            <li><a class="dropdown-item" href="library4.html">Javascript library 4</a></li>
-                            <li><a class="dropdown-item" href="library5.html">Javascript library 5</a></li>
+                            <li><a class="dropdown-item" href="customer.php">Enter your info</a></li>
+                            <li><a class="dropdown-item" href="icecream.php">Describe your ice cream</a></li>
+                            <li><a class="dropdown-item" href="customer-icecream.php">What's your offer?'</a></li>
+                            <li><a class="dropdown-item" href="deals.php">Deals</a></li>
+                            <li><a class="dropdown-item" href="promotion.php">Promotion</a></li>
 
 
                         </ul>
