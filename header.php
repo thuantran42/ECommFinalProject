@@ -22,17 +22,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <h2><a class="nav-link active" aria-current="page" href="index.php">Home</a></h2> <!-- go to home page -->
+                        <a class="nav-link active" aria-current="page" href="index.php"><span onmouseover="style.color='blue'" onmouseout="style.color='black'" style="color: black"> Home </span> </a> <!-- go to home page -->
                     </li>
 
                     <li class="nav-item"> <!-- single-purpose link to another page -->
-                        <h2 onmouseover="style.color='red'" onmouseout="style.color='black'" style="color: black;"><a class="nav-link" href="aboutus.php">About Us</a></h2>
+                        <a class="nav-link" href="aboutus.php"> <span onmouseover="style.color='blue'" onmouseout="style.color='black'" style="color: black">About Us </span> </a>
                     </li>
 
                     <li class="nav-item dropdown"> <!-- drop down menu part-->
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <h2>Dropdown</h2>
-                     </a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span onmouseover="style.color='blue'" onmouseout="style.color='black'" style="color: black"> Flavors </span> 
+
+                        </a>
                         
                       
                         
