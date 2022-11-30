@@ -58,7 +58,7 @@
                 <p>
                     Ice Scream was started in Oklahoma City, Oklahoma and it is founded by Trae Tran.
                     He saw great ambition in creativity from low-end to high-end ice cream in hopes <br /> 
-                    to appeal to all ice cream lovers. In 2018, Trae worked at a small ice cream shop that he was super excited to work every afternoon. <br />
+                    to appeal to all ice cream lovers. In 2015, Trae worked at a small ice cream shop that he was super excited to work every afternoon. <br />
                     Serving the customers with various flavors has always given me joy. However, due to seriously bad inflation, the ice cream shop <br />
                     was forced to close and he was out of the job. From this day foward, he studied hard at the University of Oklahoma about <br /> 
                     businesses, ice cream stores, and systems. <br />
