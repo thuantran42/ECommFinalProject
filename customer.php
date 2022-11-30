@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    
+
 
     <?php
     $servername = "localhost";
@@ -24,18 +24,18 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
     switch ($_POST['saveType']) {
     case 'Add':
-    $sqlAdd = "insert into Customer (customerName) value (?)";
+    $sqlAdd = "insert into Customer (customerName, customerPhone) value (?,?)";
     $stmtAdd = $conn->prepare($sqlAdd);
-    $stmtAdd->bind_param("s", $_POST['iName']);
+    $stmtAdd->bind_param("ss", $_POST['iName'],$_POST['iPhone']);
     $stmtAdd->execute();
     echo '<div class="alert alert-success" role="alert">New name added!</div>';
 
     break;
 
     case 'Edit':
-    $sqlEdit = "update Customer set customerName=? where customer_id=?";
+    $sqlEdit = "update Customer set customerName=?,customerPhone=? where customer_id=?";
     $stmtEdit = $conn->prepare($sqlEdit);
-    $stmtEdit->bind_param("si", $_POST['iName'], $_POST['iid']);
+    $stmtEdit->bind_param("si", $_POST['iName'], $_POST['iPhone'], $_POST['iid']);
     $stmtEdit->execute();
     echo '<div class="alert alert-success" role="alert">Name edited.</div>';
 
@@ -79,21 +79,23 @@
                 <td><?=$row["customer_id"]?></td>
                 <td><?=$row["customerName"]?></td>
                 <td>
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>"> Edit
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>">
+                        Edit
                     </button>
-                    <div class="modal fade" id="editWeapons<?=$row["customer_id"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editWeapons<?=$row["customer_id"]?>Label" aria-hidden="true">
+                    <div class="modal fade" id="editWeapons<?=$row['customer_id']?>
+                        " data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editWeapons<?=$row['customer_id']?>Label" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="editWeapons<?=$row['customer_id']?>Label">Edit Weapon</h1>
+                                    <h1 class="modal-title fs-5" id="editWeapons<?=$row['customer_id']?>Label">Edit Customer Information</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form method="post" action="">
                                         <div class="mb-3">
                                             <label for="editWeapons<?=$row['customer_id']?>Name" class="form-label">Name</label>
-                                            <input type="text" class="form-control" id="editWeapons<?=$row["customer_id"]?>Name" aria-describedby="editWeapons<?=$row["customer_id"]?>Help" name="iName" value="<?=$row['customerName']?>">
-                                            <div id="editWeapons<?=$row["customer_id"]?>Help" class="form-text">Enter the customer's name.</div>
+                                            <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row["customer_id"]?>Help" name="iName" value="<?=$row['customerName']?>">
+                                            <div id="editWeapons<?=$row[" customer_id"]?>Help" class="form-text">Enter the customer's name.</div>
                                         </div>
                                         <input type="hidden" name="iid" value="<?=$row['customer_id']?>">
                                         <input type="hidden" name="saveType" value="Edit">
@@ -106,7 +108,7 @@
                 </td>
                 <td>
                     <form method="post" action="">
-                        <input type="hidden" name="iid" value="<?=$row['customer_id']?>"/>
+                        <input type="hidden" name="iid" value="<?=$row['customer_id']?>" />
                         <input type="hidden" name="saveType" value="Delete">
                         <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
                     </form>
@@ -134,7 +136,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="addWeaponsLabel">Add Weapon</h1>
+                    <h1 class="modal-title fs-5" id="addWeaponsLabel">Add Customer Information</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -142,7 +144,7 @@
                         <div class="mb-3">
                             <label for="WeaponsName" class="form-label">Name</label>
                             <input type="text" class="form-control" id="WeaponsName" aria-describedby="nameHelp" name="iName">
-                            <div id="nameHelp" class="form-text">Enter the Weapon's name.</div>
+                            <div id="nameHelp" class="form-text">Enter the Customer's name.</div>
                         </div>
                         <input type="hidden" name="saveType" value="Add">
                         <button type="submit" class="btn btn-primary">Submit</button>
