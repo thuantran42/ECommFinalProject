@@ -37,7 +37,7 @@
     $stmtEdit = $conn->prepare($sqlEdit);
     $stmtEdit->bind_param("si", $_POST['iName'], $_POST['iPhone'], $_POST['iid']);
     $stmtEdit->execute();
-    echo '<div class="alert alert-success" role="alert">Name edited.</div>';
+    echo '<div class="alert alert-success" role="alert">Customer Info edited.</div>';
 
     break;
 
@@ -78,6 +78,7 @@
             <tr>
                 <td><?=$row["customer_id"]?></td>
                 <td><?=$row["customerName"]?></td>
+                <td><?=$row["customerPhone"]?></td>
                 <td>
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>">
                         Edit
