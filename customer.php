@@ -24,9 +24,9 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
     switch ($_POST['saveType']) {
     case 'Add':
-    $sqlAdd = "insert into Customer (customerName, customerPhone) value (?,?)";
+    $sqlAdd = "insert into Customer (customerName, customerPhone) values (?, ?)";
     $stmtAdd = $conn->prepare($sqlAdd);
-    $stmtAdd->bind_param("ss", $_POST['iName'],$_POST['iPhone']);
+    $stmtAdd->bind_param("ss", $_POST['iName'], $_POST['iPhone']);
     $stmtAdd->execute();
     echo '<div class="alert alert-success" role="alert">New name added!</div>';
 
@@ -144,8 +144,8 @@
                     <form method="post" action="">
                         <div class="mb-3">
                             <label for="WeaponsName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="WeaponsName" aria-describedby="nameHelp" name="iName">
-                            <input type="text" class="form-control" id="CustomerPhone" aria-describedby="nameHelp" name="iPhone">
+                            <input type="text" class="form-control" id="WeaponsName" aria-describedby="nameHelp" name="iName"> <!-- input name-->
+                            <input type="text" class="form-control" id="CustomerPhone" aria-describedby="nameHelp" name="iPhone"> <!-- input phone number-->
                             <div id="nameHelp" class="form-text">Enter the Customer's info.</div>
                         </div>
                         <input type="hidden" name="saveType" value="Add">
