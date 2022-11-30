@@ -145,7 +145,8 @@
                         <div class="mb-3">
                             <label for="WeaponsName" class="form-label">Name</label>
                             <input type="text" class="form-control" id="WeaponsName" aria-describedby="nameHelp" name="iName">
-                            <div id="nameHelp" class="form-text">Enter the Customer's name.</div>
+                            <input type="text" class="form-control" id="CustomerPhone" aria-describedby="nameHelp" name="iPhone">
+                            <div id="nameHelp" class="form-text">Enter the Customer's info.</div>
                         </div>
                         <input type="hidden" name="saveType" value="Add">
                         <button type="submit" class="btn btn-primary">Submit</button>
