@@ -57,9 +57,15 @@
             <div class="card-body">
                 <p>
                     Ice Scream was started in Oklahoma City, Oklahoma and it is founded by Trae Tran.
-                    Trae Tran saw great ambition in creativity from low-end to high-end ice cream in hopes
-                    to appeal to all ice cream lovers. The idea of the customer is always right has been
-                    fundamentally integrated into our creative ice creaming making system.
+                    He saw great ambition in creativity from low-end to high-end ice cream in hopes
+                    to appeal to all ice cream lovers. In 2018, Trae worked at a small ice cream shop that he was super excited to work every afternoon. <br />
+                    Serving the customers with various flavors has always given my joy. However, due to seriously bad inflation, the ice cream shop <br />
+                    was forced to close and he was out of the job. From this day foward, he studied hard at the University of Oklahoma about <br /> 
+                    businesses, ice cream stores, and systems. <br />
+                    <br />
+                    After getting the degree along with great colleagues, the first Ice Scream Company shop was established in Oklahoma City, Oklahoma. <br />
+                    Trae had the amazing idea of letting customers name the ice cream they want and the employees will come up with the given ingredients to make <br />
+                    the ice cream for them! 
                 </p>
 
             </div>
@@ -135,7 +141,7 @@
                 <p>
                     Looking to stay connected with us? <br />
                     Want to hear the latest events happening around the world? <br />
-                    Excited to hear more about new toppings we'll add to the menu? <br />
+                    Excited to hear more about our new toppings we'll add to the menu? <br />
                     Looking for an exciting job that'll make you scream? <br />
                     <br />
                     Follow us on Linkedin, Instagram, Youtube, and Twitter! <br />
@@ -144,7 +150,7 @@
                     <a href="https://www.linkedin.com/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgd4JdyuHOYjmtScEwT2PirsDOyS-6XTAIoA&usqp=CAU" alt="Linkedin link" style="height:50px; width:50px;" /> </a> 
                     <a href="https://www.instagram.com/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibNm4alTFbffyXvLcZgMEsrIqnyK66LeszQ&usqp=CAU" alt="Instgram link" style="height:50px; width:50px;"/> </a> 
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQivdaPpv3KvpL8RUJFo-GLIO6LciuTLhdvVw&usqp=CAU" alt="Youtube link" style="height:50px; width:50px;"/> </a> 
-                    <a href="https://twitter.com/"> <img src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" alt="Twitter link" style="height:50px; width:50px;"/> </a>
+                    <a href="https://twitter.com/"> <img src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" alt="Twitter link" style="height:50px; width:75px;"/> </a>
                     
                 </p>
 
