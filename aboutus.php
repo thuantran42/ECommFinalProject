@@ -43,11 +43,11 @@
             </div>
         </div>-->
 
-        <div>
+        <div> <!-- First Big Div -->
             <div class="card">
                 <div class="card-header">
 
-                    <span style="color:hotpink;">About Us</span>
+                    <span style="color:hotpink;">About Us</span><!-- about us -->
 
                 </div>
 
@@ -71,7 +71,7 @@
                 <div class="card">
                     <div class="card-header">
 
-                        <span style="color:hotpink;">The Mission Statement</span>
+                        <span style="color:hotpink;">The Mission Statement</span> <!-- Mission statement -->
 
                     </div>
 
@@ -83,10 +83,32 @@
 
                     </div>
 
+                </div>
 
+            </div>
+
+
+            <div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQH2lw-G4ZBFwg/profile-displayphoto-shrink_800_800/0/1592175896484?e=1675296000&v=beta&t=DmxAUUSIkdgI3VGwnwCstyY99Jgw6xvzK8166MlU8jw" class="card-img-top" alt="picture of Trae">
+                        <span style="color:hotpink;">Something icy about the Founder</span>
+
+                    </div>
+
+                    <div class="card-body">
+                        <p>
+                            The founder, Trae, is committed to making the Ice Scream Company one of the most flexible customer choices for icy snacks around the world.
+                            Trae loves to play basketball and bowling for fun. He has got his Bachelor's in MIS from the University of Oklahoma. (Go sooners!) 
+                            Here is some words from the Founder of the Ice Scream Company! <br />
+                            "It is my pleasure to present myself on this earth full of ice cream lovers. My goal is to create an exciting environment for all those who <br />
+                            enjoy a great icy snack on any day. I will put forth my effort to creating the best experiences for the customer and our associates!"
+                        </p>
+
+                    </div>
 
                 </div>
-                
+
             </div>
 
 
