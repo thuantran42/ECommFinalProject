@@ -79,8 +79,7 @@
                 <td><?=$row["customer_id"]?></td>
                 <td><?=$row["customerName"]?></td>
                 <td>
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row[" customer_id"]?>
-                        ">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row[" customer_id"]?>">
                         Edit
                     </button>
                     <div class="modal fade" id="editWeapons<?=$row[" customer_id"]?>
@@ -109,7 +108,7 @@
                 </td>
                 <td>
                     <form method="post" action="">
-                        <input type="hidden" name="iid" value="<?=$row[" customer_id"]?>" />
+                        <input type="hidden" name="iid" value="<?=$row[" customer_id"]?>"/>
                         <input type="hidden" name="saveType" value="Delete">
                         <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
                     </form>
