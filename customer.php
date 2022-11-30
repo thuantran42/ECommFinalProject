@@ -67,7 +67,7 @@
         <tbody>
 
             <?php
-            $sql = "SELECT customer_id, customerName from Customer";
+            $sql = "SELECT customer_id, customerName, customerPhone from Customer";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
