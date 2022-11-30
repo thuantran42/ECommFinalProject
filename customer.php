@@ -1,11 +1,12 @@
 <?php require_once('header.php');?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RPG Weapons</title>
+<title>Enter your info</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
 
+    
 
     <?php
     $servername = "localhost";
@@ -23,29 +24,29 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
     switch ($_POST['saveType']) {
     case 'Add':
-    $sqlAdd = "insert into Customer (weapon_name) value (?)";
+    $sqlAdd = "insert into Customer (customerName) value (?)";
     $stmtAdd = $conn->prepare($sqlAdd);
     $stmtAdd->bind_param("s", $_POST['iName']);
     $stmtAdd->execute();
-    echo '<div class="alert alert-success" role="alert">New weapon added.</div>';
+    echo '<div class="alert alert-success" role="alert">New name added!</div>';
 
     break;
 
     case 'Edit':
-    $sqlEdit = "update Customer set weapon_name=? where weapon_id=?";
+    $sqlEdit = "update Customer set customerName=? where customer_id=?";
     $stmtEdit = $conn->prepare($sqlEdit);
     $stmtEdit->bind_param("si", $_POST['iName'], $_POST['iid']);
     $stmtEdit->execute();
-    echo '<div class="alert alert-success" role="alert">Weapon edited.</div>';
+    echo '<div class="alert alert-success" role="alert">Name edited.</div>';
 
     break;
 
     case 'Delete':
-    $sqlDelete = "delete from Customer where weapon_id=?";
+    $sqlDelete = "delete from Customer where customer_id=?";
     $stmtDelete = $conn->prepare($sqlDelete);
     $stmtDelete->bind_param("i", $_POST['iid']);
     $stmtDelete->execute();
-    echo '<div class="alert alert-success" role="alert">Weapon deleted.</div>';
+    echo '<div class="alert alert-success" role="alert">Name deleted.</div>';
 
     break;
 
@@ -53,7 +54,7 @@
     }
     ?>
 
-    <h1> RPG Weapons</h1>
+    <h1> Customer info</h1>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -66,7 +67,7 @@
         <tbody>
 
             <?php
-            $sql = "SELECT weapon_id, weapon_name from Customer";
+            $sql = "SELECT customer_id, customerName from Customer";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
@@ -75,29 +76,29 @@
             ?>
 
             <tr>
-                <td><?=$row["weapon_id"]?></td>
-                <td><?=$row["weapon_name"]?></td>
+                <td><?=$row["customer_id"]?></td>
+                <td><?=$row["customerName"]?></td>
                 <td>
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row[" weapon_id"]?>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row[" customer_id"]?>
                         ">
                         Edit
                     </button>
-                    <div class="modal fade" id="editWeapons<?=$row[" weapon_id"]?>
-                        " data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editWeapons<?=$row["weapon_id"]?>Label" aria-hidden="true">
+                    <div class="modal fade" id="editWeapons<?=$row[" customer_id"]?>
+                        " data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editWeapons<?=$row["customer_id"]?>Label" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="editWeapons<?=$row["weapon_id"]?>Label">Edit Weapon</h1>
+                                    <h1 class="modal-title fs-5" id="editWeapons<?=$row["customer_id"]?>Label">Edit Weapon</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form method="post" action="">
                                         <div class="mb-3">
-                                            <label for="editWeapons<?=$row[" weapon_id"]?>Name" class="form-label">Name</label>
-                                            <input type="text" class="form-control" id="editWeapons<?=$row[" weapon_id"]?>Name" aria-describedby="editWeapons<?=$row["weapon_id"]?>Help" name="iName" value="<?=$row['weapon_name']?>">
-                                            <div id="editWeapons<?=$row[" weapon_id"]?>Help" class="form-text">Enter the weapon's name.</div>
+                                            <label for="editWeapons<?=$row[" customer_id"]?>Name" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="editWeapons<?=$row[" customer_id"]?>Name" aria-describedby="editWeapons<?=$row["customer_id"]?>Help" name="iName" value="<?=$row['customerName']?>">
+                                            <div id="editWeapons<?=$row[" customer_id"]?>Help" class="form-text">Enter the weapon's name.</div>
                                         </div>
-                                        <input type="hidden" name="iid" value="<?=$row['weapon_id']?>">
+                                        <input type="hidden" name="iid" value="<?=$row['customer_id']?>">
                                         <input type="hidden" name="saveType" value="Edit">
                                         <input type="submit" class="btn btn-primary" value="Submit">
                                     </form>
@@ -108,7 +109,7 @@
                 </td>
                 <td>
                     <form method="post" action="">
-                        <input type="hidden" name="iid" value="<?=$row[" weapon_id"]?>" />
+                        <input type="hidden" name="iid" value="<?=$row[" customer_id"]?>" />
                         <input type="hidden" name="saveType" value="Delete">
                         <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
                     </form>
