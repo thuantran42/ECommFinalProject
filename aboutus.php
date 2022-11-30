@@ -110,7 +110,7 @@
                 <div class="card-body">
                     <p>
                         The founder, Trae, is committed to making the Ice Scream Company one of the most flexible customer choices for icy snacks around the world. <br />
-                        Trae loves to play basketball and bowling for fun. He has got his Bachelor's in MIS from the University of Oklahoma. (Go sooners!) <br />
+                        Trae loves to play basketball and bowling for fun. He got his BBA in MIS from the University of Oklahoma. (Go sooners!) <br />
                         Trae had always dreamed of making an ice scream shop that can bring all ice cream lovers alike together! <br />
                         <br />
                         Here is some words from the Founder of the Ice Scream Company! <br />
