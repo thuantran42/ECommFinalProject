@@ -28,7 +28,7 @@
 
 <body>
 
-    <div>
+    <!--<div>-->
 
         <!-- you can experiment opacity: 0.3 for transparency -->
         <!--<div style="color:lightpink;" class="text-center fw-bold text-uppercase">-->
@@ -42,13 +42,14 @@
                 This is some text within a card body.
             </div>
         </div>-->
+    <br /> <!-- Space break -->
 
         <div> <!-- First Big Div -->
             <div class="card">
                 <div class="card-header">
                     <img src="https://www.sciencenews.org/wp-content/uploads/2021/04/041221_AD_scream_feat_REV.jpg" class="card-img-top" alt="picture of Trae" style="height:100px; width:100px;">
 
-                    <span style="color:hotpink;">About Us</span><!-- about us -->
+                    <h2 onmouseover="style.color='red'" onmouseout="style.color='black'" style="color: black;"><span style="color:hotpink;">About Us</span></h2>        <!-- about us -->
 
                 </div>
 
@@ -103,6 +104,7 @@
                         <p>
                             The founder, Trae, is committed to making the Ice Scream Company one of the most flexible customer choices for icy snacks around the world. <br />
                             Trae loves to play basketball and bowling for fun. He has got his Bachelor's in MIS from the University of Oklahoma. (Go sooners!) <br />
+                            Trae had always dreamed of making an ice scream shop to spread the joy to everyone and everyone. 
                             Here is some words from the Founder of the Ice Scream Company! <br />
                             "It is my pleasure to present myself on this earth full of ice cream lovers. My goal is to create an exciting environment for all those who <br />
                             enjoy a great icy snack on any day. I will put forth my effort to creating the best experiences for customers and our associates! I dream that <br />
