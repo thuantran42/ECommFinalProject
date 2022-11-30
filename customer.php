@@ -86,15 +86,15 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="editWeapons<?=$row["customer_id"]?>Label">Edit Weapon</h1>
+                                    <h1 class="modal-title fs-5" id="editWeapons<?=$row['customer_id']?>Label">Edit Weapon</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form method="post" action="">
                                         <div class="mb-3">
-                                            <label for="editWeapons<?=$row[" customer_id"]?>Name" class="form-label">Name</label>
+                                            <label for="editWeapons<?=$row['customer_id']?>Name" class="form-label">Name</label>
                                             <input type="text" class="form-control" id="editWeapons<?=$row["customer_id"]?>Name" aria-describedby="editWeapons<?=$row["customer_id"]?>Help" name="iName" value="<?=$row['customerName']?>">
-                                            <div id="editWeapons<?=$row[" customer_id"]?>Help" class="form-text">Enter the customer's name.</div>
+                                            <div id="editWeapons<?=$row["customer_id"]?>Help" class="form-text">Enter the customer's name.</div>
                                         </div>
                                         <input type="hidden" name="iid" value="<?=$row['customer_id']?>">
                                         <input type="hidden" name="saveType" value="Edit">
@@ -107,7 +107,7 @@
                 </td>
                 <td>
                     <form method="post" action="">
-                        <input type="hidden" name="iid" value="<?=$row[" customer_id"]?>"/>
+                        <input type="hidden" name="iid" value="<?=$row['customer_id']?>"/>
                         <input type="hidden" name="saveType" value="Delete">
                         <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
                     </form>
