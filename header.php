@@ -31,7 +31,7 @@
 
                     <li class="nav-item dropdown"> <!-- drop down menu part-->
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span onmouseover="style.color='blue'" onmouseout="style.color='black'" style="color: black"> Flavors </span> 
+                            <span onmouseover="style.color='blue'" onmouseout="style.color='black'" style="color: black"> Shop </span> 
 
                         </a>
                         
