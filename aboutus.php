@@ -91,7 +91,7 @@
             <div>
                 <div class="card">
                     <div class="card-header">
-                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQH2lw-G4ZBFwg/profile-displayphoto-shrink_800_800/0/1592175896484?e=1675296000&v=beta&t=DmxAUUSIkdgI3VGwnwCstyY99Jgw6xvzK8166MlU8jw" class="card-img-top" alt="picture of Trae">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQH2lw-G4ZBFwg/profile-displayphoto-shrink_800_800/0/1592175896484?e=1675296000&v=beta&t=DmxAUUSIkdgI3VGwnwCstyY99Jgw6xvzK8166MlU8jw" class="card-img-top" alt="picture of Trae" style="height:100px;">
                         <span style="color:hotpink;">Something icy about the Founder</span>
 
                     </div>
