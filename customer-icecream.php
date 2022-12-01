@@ -198,9 +198,9 @@
         ?>
 
         
-        <input type="text" class="quantity" value="<?=$row?>">
+        <input type="text" class="quantity" value="<?=count($row?)>">
 
-        <p class="total">Total: <span id="total">$4.99</span></p>
+        <p class="total">Total: <span id="total">$5.00</span></p>
         <?php
         }
         } else {
