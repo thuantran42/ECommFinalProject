@@ -6,7 +6,15 @@
 </head>
 
 <style>
-
+    body {
+        background-image: url("https://img.freepik.com/free-vector/confetti-background_1048-7865.jpg?w=740&t=st=1669434268~exp=1669434868~hmac=769baab9295a48e4a300e4e0c9efd7cca933906626f8630687dec24764522ee2");
+        /*background-color: #cccccc;*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*margin:auto;*/
+        /*background-position: center center;*/
+        /*background-attachment: fixed;*/
+    }
 </style>
 
 
@@ -89,7 +97,7 @@
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>">
                         Edit
                     </button>
-                    <div class="modal fade" id="editWeapons<?=$row['customer_id']?>"data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editWeapons<?=$row['customer_id']?>Label" aria-hidden="true">
+                    <div class="modal fade" id="editWeapons<?=$row['customer_id']?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editWeapons<?=$row['customer_id']?>Label" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -101,6 +109,7 @@
                                         <div class="mb-3">
                                             <label for="editWeapons<?=$row['customer_id']?>Name" class="form-label">Name</label>
                                             <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iName" value="<?=$row['customerName']?>"> <!-- customerName -->
+                                            Phone Number
                                             <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iPhone" value="<?=$row['customerPhone']?>"> <!-- customerPhone -->
                                             <div id="editWeapons<?=$row['customer_id']?>Help" class="form-text">Enter the customer's name.</div>
                                         </div>
@@ -161,8 +170,46 @@
             </div>
         </div>
     </div>
-    </div>
+
+
+
     <a class="btn btn-primary" href="index.php" role="button">Home</a>
+
+    <div class="fw-bold ">
+        <!-- footer divs -->
+        <hr />
+        <div>
+            <!-- first row divs in footer-->
+            <div style="width: 400px; float: left;">
+                Privacy Policy
+            </div>
+
+            <div style="width:400px; float:left;">
+                Terms & Conditions
+            </div>
+
+            <div style="width: 400px; float: left;">
+                Do Not Sell or Share My Personal Information
+            </div>
+
+        </div>
+
+
+
+        <div>
+            <div style="width: 400px; float: left;">
+                Cookie Settings
+            </div>
+
+            <div style="width: 400px; float: left;">
+                @2018 - 2022 The Ice Scream Comapny Inc.
+            </div>
+
+        </div>
+
+
+
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
