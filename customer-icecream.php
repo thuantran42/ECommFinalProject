@@ -190,15 +190,17 @@
         $sql = "select *
         FROM IceCream";
         $result = $conn->query($sql);
-        $countRow = count($result);
+        $rowcount=mysqli_num_rows($result);
+
+        printf("Result set has %d rows.\n",$rowcount);
 
         if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
         ?>
 
-        
-        <input type="text" class="quantity" value="<?=$countRow?>">
+
+        <input type="text" class="quantity" value="<?=$rowcount?>">
 
         <p class="total">Total: <span id="total">$5.00</span></p>
         <?php
