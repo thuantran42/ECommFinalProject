@@ -190,6 +190,8 @@
         Add New
     </button>
 
+    <br /> <!-- Space break-->
+
     <!-- Modal -->
     <div class="modal fade" id="addWeapons" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addWeaponsLabel" aria-hidden="true">
         <div class="modal-dialog">
