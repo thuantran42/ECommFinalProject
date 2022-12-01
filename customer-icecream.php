@@ -192,7 +192,7 @@
         $result = $conn->query($sql);
         $rowcount=mysqli_num_rows($result);
 
-        
+
 
         if ($result->num_rows > 0) {
         // output data of each row
@@ -200,9 +200,7 @@
         ?>
 
 
-        <input type="text" id="quantityCheck1" class="quantity" value="<?=$rowcount?>"> <!-- Error, fix later-->
-
-        <p class="total">Total: <span id="total">$</span></p>
+        
         <?php
         }
         } else {
@@ -210,6 +208,9 @@
         }
         $conn->close();
         ?>
+        <input type="text" id="quantityCheck1" class="quantity" value="<?=$rowcount?>"> <!-- Error, fix later-->
+
+        <p class="total">Total: <span id="total">$</span></p>
         <button class="btn">Submit Order</button>
 
     </div>
