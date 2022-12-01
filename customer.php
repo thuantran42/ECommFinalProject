@@ -124,7 +124,7 @@
                         <td><?=$row["customerName"]?></td>
                         <td><?=$row["customerPhone"]?></td>
                         <td>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>">
+                            <button type="button" class="btn" style="background-color:hotpink;" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>">
                                 <!-- Edit Section-->
                                 Edit
                             </button>
@@ -158,7 +158,7 @@
                                 <!-- Delete section -->
                                 <input type="hidden" name="iid" value="<?=$row['customer_id']?>" />
                                 <input type="hidden" name="saveType" value="Delete">
-                                <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
+                                <input type="submit" class="btn" style="background-color:hotpink;" onclick="return confirm('Are you sure?')" value="Delete">
                             </form>
                         </td>
                     </tr>
