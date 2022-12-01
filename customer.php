@@ -47,20 +47,20 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
     switch ($_POST['saveType']) {
     case 'Add':
-    $sqlAdd = "insert into Customer (customerName, customerPhone) values (?, ?)";
+    $sqlAdd = "insert into Customer (customerName, customerPhone, customerAddress) values (?, ?, ?)";
     $stmtAdd = $conn->prepare($sqlAdd);
-    $stmtAdd->bind_param("ss", $_POST['iName'], $_POST['iPhone']);
+    $stmtAdd->bind_param("sss", $_POST['iName'], $_POST['iPhone'], $_POST['iAddress']);
     $stmtAdd->execute();
     echo '<div class="alert alert-success" role="alert">New Customer info added!</div>';
 
     break;
 
     case 'Edit':
-    $sqlEdit = "update Customer set customerName=?,customerPhone=? where customer_id=?";
+    $sqlEdit = "update Customer set customerName=?,customerPhone=?,customerAddress=? where customer_id=?";
     $stmtEdit = $conn->prepare($sqlEdit);
-    $stmtEdit->bind_param("ssi", $_POST['iName'], $_POST['iPhone'], $_POST['iid']);
+    $stmtEdit->bind_param("sssi", $_POST['iName'], $_POST['iPhone'], $_POST['iAddress'], $_POST['iid']);
     $stmtEdit->execute();
-    echo '<div class="alert alert-success" role="alert">Customer Info edited.</div>';
+    echo '<div class="alert alert-success" role="alert">Customer Info edited!</div>';
 
     break;
 
@@ -77,11 +77,13 @@
     }
     ?>
 
+    <br /> <!-- Space break -->
+
 
     <div class="card">
         <div class="card-header">
             <h1> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Customer(s) info</span></h1> <!-- Customer Info Title-->
-            <h3> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">You got friends that want to shop too? Add them here!</span></h3>
+            <h5> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">You got friends that want to shop too? Add them here!</span></h5>
         </div>
     </div>
 
@@ -105,13 +107,13 @@
                         <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">ID</span></th> <!-- ID Attribute -->
                         <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Name</span></th>  <!-- Name Attribute -->
                         <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Phone Number</span></th>  <!-- Phone Number Attribute -->
-                        <th></th>
+                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Address</span></th>  <!-- Address Attribute -->
                     </tr>
                 </thead>
                 <tbody>
 
                     <?php
-                    $sql = "SELECT customer_id, customerName, customerPhone from Customer";
+                    $sql = "SELECT customer_id, customerName, customerPhone, customerAddress from Customer";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
@@ -123,6 +125,7 @@
                         <td><?=$row["customer_id"]?></td>
                         <td><?=$row["customerName"]?></td>
                         <td><?=$row["customerPhone"]?></td>
+                        <td><?=$row["customerAddress"]?></td>
                         <td>
                             <button type="button" class="btn" style="background-color:hotpink;" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>">
                                 <!-- Edit Section-->
@@ -142,6 +145,8 @@
                                                     <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iName" value="<?=$row['customerName']?>"> <!-- customerName -->
                                                     Phone Number
                                                     <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iPhone" value="<?=$row['customerPhone']?>"> <!-- customerPhone -->
+                                                    Address (Where we delivery the sweets to you!)
+                                                    <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iAddress" value="<?=$row['customerAddress']?>"> <!-- customerAddress-->
                                                     <div id="editWeapons<?=$row['customer_id']?>Help" class="form-text">Edit info.</div>
                                                 </div>
                                                 <input type="hidden" name="iid" value="<?=$row['customer_id']?>">
@@ -179,6 +184,7 @@
 
 
     <br /> <!-- Space Break-->
+
     <!-- Add New Button trigger modal -->
     <button type="button" class="btn btn-primary" style="background-color:hotpink;" data-bs-toggle="modal" data-bs-target="#addWeapons">
         <!-- Add New Section -->
@@ -189,22 +195,28 @@
     <div class="modal fade" id="addWeapons" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addWeaponsLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
+
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="addWeaponsLabel">Add Customer Information</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
                 <div class="modal-body">
+
                     <form method="post" action="">
                         <div class="mb-3">
                             <label for="WeaponsName" class="form-label">Name</label>
                             <input type="text" class="form-control" id="WeaponsName" aria-describedby="nameHelp" name="iName"> <!-- input name-->
                             Phone Number
                             <input type="text" class="form-control" id="CustomerPhone" aria-describedby="nameHelp" name="iPhone"> <!-- input phone number-->
+                            Address (Where we will deliver the sweets to you!)
+                            <input type="text" class="form-control" id="CustomerAddress" aria-describedby="nameHelp" name="iAddress">  <!-- input address-->
                             <div id="nameHelp" class="form-text">Enter the Customer's info.</div>
                         </div>
                         <input type="hidden" name="saveType" value="Add">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
+
                 </div>
             </div>
         </div>
