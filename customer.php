@@ -184,7 +184,6 @@
 
 
     <br /> <!-- Space Break-->
-
     <!-- Add New Button trigger modal -->
     <button type="button" class="btn btn-primary" style="background-color:hotpink;" data-bs-toggle="modal" data-bs-target="#addWeapons">
         <!-- Add New Section -->
@@ -221,6 +220,23 @@
             </div>
         </div>
     </div>
+
+    <br /> <!-- Space Break-->
+
+    <div class="card">
+        <div class="card-header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp9MN2zz3-tN_MxO9BLyt2-kx8mz7gHXya3Q&usqp=CAU" class="card-img-top" alt="picture of screaming" style="height:100px; width:100px;">
+
+            <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink"> Did you know?</span>
+        </div>
+        <div class="card-body">
+            The Ice Scream company is committed to make icy and organized purchases for our customers! <br />
+            This way, we can tag the name next to their order and see which item is theirs! <br />
+        </div>
+    </div>
+
+
+    <br /> <!-- Space Break -->
 
 
 
