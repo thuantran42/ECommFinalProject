@@ -15,6 +15,16 @@
         /*background-position: center center;*/
         /*background-attachment: fixed;*/
     }
+
+    .bd-callout {
+        padding: 1.25rem;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        border: 1px solid #e9ecef;
+        border-left-width: 0.25rem;
+        border-radius: 0.25rem;
+        border-left-color: #5bc0de;
+    }
 </style>
 
 
@@ -71,7 +81,8 @@
 
     <div class="card">
         <div class="card-header">
-            <h1> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Customer info</span></h1> <!-- Customer Info Title-->
+            <h1> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Customer(s) info</span></h1> <!-- Customer Info Title-->
+            <h3> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">You got friends that want to shop too? Add them here!</span></h3>
         </div>
     </div>
 
@@ -114,7 +125,7 @@
                             <td><?=$row["customerName"]?></td>
                             <td><?=$row["customerPhone"]?></td>
                             <td>
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>"> <!-- Edit Section-->
                                     Edit
                                 </button>
                                 <div class="modal fade" id="editWeapons<?=$row['customer_id']?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editWeapons<?=$row['customer_id']?>Label" aria-hidden="true">
@@ -131,7 +142,7 @@
                                                         <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iName" value="<?=$row['customerName']?>"> <!-- customerName -->
                                                         Phone Number
                                                         <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iPhone" value="<?=$row['customerPhone']?>"> <!-- customerPhone -->
-                                                        <div id="editWeapons<?=$row['customer_id']?>Help" class="form-text">Enter the customer's name.</div>
+                                                        <div id="editWeapons<?=$row['customer_id']?>Help" class="form-text">Edit info.</div>
                                                     </div>
                                                     <input type="hidden" name="iid" value="<?=$row['customer_id']?>">
                                                     <input type="hidden" name="saveType" value="Edit">
@@ -143,7 +154,7 @@
                                 </div>
                             </td>
                             <td>
-                                <form method="post" action="">
+                                <form method="post" action=""> <!-- Delete section -->
                                     <input type="hidden" name="iid" value="<?=$row['customer_id']?>" />
                                     <input type="hidden" name="saveType" value="Delete">
                                     <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
@@ -168,8 +179,8 @@
 
             <br /> <!-- Space Break-->
 
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addWeapons">
+            <!-- Add New Button trigger modal -->
+            <button type="button" class="btn btn-primary" style="background-color:hotpink;" data-bs-toggle="modal" data-bs-target="#addWeapons"> <!-- Add New Section -->
                 Add New
             </button>
 
@@ -199,7 +210,7 @@
 
 
 
-            <a class="btn btn-primary" href="index.php" role="button">Home</a>
+            <a class="btn btn-primary" style="background-color:hotpink;" href="index.php" role="button">Home</a> <!-- Bottom Home Button-->
 
             <div class="fw-bold ">
                 <!-- footer divs -->
