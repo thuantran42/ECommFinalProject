@@ -10,9 +10,16 @@
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
 <script>
-    let d = new Date();
-    alert("Today's date is " + d);
+    function webpageReadyFun() {
+        $("#tbl1").DataTable({
+            lengthMenu: [10, 20, 40, 60],
+            pageLength: 10,
 
+        });
+        //alert("OK");
+    }
+
+    $(document).ready(webpageReadyFun);
 </script>
 
 </head>
@@ -101,7 +108,7 @@
 
     <div class="card">
         <div class="card-body">
-            <table class="table table-striped">
+            <table id="tbl1"class="table table-striped">
                 <thead>
                     <tr>
                         <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Ice Cream ID</span></th>
