@@ -172,7 +172,7 @@
     <div class="checkout">
         <!-- Check out Box -->
         <h1 class="title">Checkout</h1>
-        <p class="price" data-price="4.99">$5.00 per Ice Cream (fixed)</p>
+        <p class="price" data-price="5.00">$5.00 per Ice Cream (fixed)</p>
         <p class="description">Quantity:</p>
         <?php
         $servername = "localhost";
