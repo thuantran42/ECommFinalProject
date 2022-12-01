@@ -9,19 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
-<script>
-    function webpageReadyFun() {
-        $("#tbl1").DataTable({
-            lengthMenu: [10, 20, 40, 60],
-            pageLength: 10,
 
-        });
-        //alert("OK");
-    }
-
-    $(document).ready(webpageReadyFun);
-
-</script>
 
 </head>
 
@@ -111,7 +99,7 @@
 
     <div class="card">
         <div class="card-body">
-            <table id="tbl1" class="table table-striped">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">ID</span></th> <!-- ID Attribute -->
@@ -210,6 +198,7 @@
                         <div class="mb-3">
                             <label for="WeaponsName" class="form-label">Name</label>
                             <input type="text" class="form-control" id="WeaponsName" aria-describedby="nameHelp" name="iName"> <!-- input name-->
+                            Phone Number
                             <input type="text" class="form-control" id="CustomerPhone" aria-describedby="nameHelp" name="iPhone"> <!-- input phone number-->
                             <div id="nameHelp" class="form-text">Enter the Customer's info.</div>
                         </div>
