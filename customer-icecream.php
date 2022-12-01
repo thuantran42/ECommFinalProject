@@ -190,7 +190,7 @@
         $sql = "select *
         FROM IceCream";
         $result = $conn->query($sql);
-        
+        $countRow = count($row);
 
         if ($result->num_rows > 0) {
         // output data of each row
@@ -198,7 +198,7 @@
         ?>
 
         
-        <input type="text" class="quantity" value="<?=count($row?)>">
+        <input type="text" class="quantity" value="<?=$countRow?>">
 
         <p class="total">Total: <span id="total">$5.00</span></p>
         <?php
