@@ -170,10 +170,16 @@
     <br /> <!-- Space break--> 
 
     <div class="checkout">
+        <!-- Check out Box -->
         <h1 class="title">Checkout</h1>
-        <p class="price" data-price="4.99">$4.99 per Juice</p>
+        <p class="price" data-price="4.99">$5.00 per Ice Cream (fixed)</p>
         <p class="description">Quantity:</p>
-        <input type="text" class="quantity" value="1">
+        <?php
+        $result = mysql_query("SELECT * FROM IceCream");
+        $rows = mysql_num_rows($result);
+        echo "There are " . $rows . " ice creams";
+        ?>
+        <input type="text" class="quantity" value="<?=$row?>">
 
         <p class="total">Total: <span id="total">$4.99</span></p>
 
