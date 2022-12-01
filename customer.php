@@ -4,6 +4,12 @@
 <title>Enter your info</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
+
+<style>
+
+</style>
+
+
 <body>
 
 
@@ -28,7 +34,7 @@
     $stmtAdd = $conn->prepare($sqlAdd);
     $stmtAdd->bind_param("ss", $_POST['iName'], $_POST['iPhone']);
     $stmtAdd->execute();
-    echo '<div class="alert alert-success" role="alert">New name added!</div>';
+    echo '<div class="alert alert-success" role="alert">New Customer info added!</div>';
 
     break;
 
@@ -46,7 +52,7 @@
     $stmtDelete = $conn->prepare($sqlDelete);
     $stmtDelete->bind_param("i", $_POST['iid']);
     $stmtDelete->execute();
-    echo '<div class="alert alert-success" role="alert">Name deleted.</div>';
+    echo '<div class="alert alert-success" role="alert">Customer info deleted.</div>';
 
     break;
 
@@ -60,7 +66,7 @@
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th></th>
+                <th>Phone Number</th>
                 <th></th>
             </tr>
         </thead>
