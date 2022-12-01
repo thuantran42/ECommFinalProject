@@ -3,6 +3,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Enter your info</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 </head>
 
 <style>
@@ -15,17 +20,21 @@
         /*background-position: center center;*/
         /*background-attachment: fixed;*/
     }
-
-    .bd-callout {
-        padding: 1.25rem;
-        margin-top: 1.25rem;
-        margin-bottom: 1.25rem;
-        border: 1px solid #e9ecef;
-        border-left-width: 0.25rem;
-        border-radius: 0.25rem;
-        border-left-color: #5bc0de;
-    }
 </style>
+
+<script>
+    function webpageReadyFun() {
+        $( "#tbl1" ).DataTable({
+            lengthMenu: [10, 20, 40, 60],
+            pageLength: 10,
+
+        });
+        //alert("OK");
+    }
+
+    $(document).ready(webpageReadyFun);
+
+</script>
 
 
 <body>
@@ -87,166 +96,168 @@
     </div>
 
 
-    
-        <!--<div class="card-header">
 
-        </div>
+    <!--<div class="card-header">
+
+    </div>
+    <div class="card-body">
+
+    </div>-->
+
+
+
+
+    <div class="card">
         <div class="card-body">
+            <table id="tbl1" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">ID</span></th> <!-- ID Attribute -->
+                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Name</span></th>  <!-- Name Attribute -->
+                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Phone Number</span></th>  <!-- Phone Number Attribute -->
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
 
-        </div>-->
-    
+                    <?php
+                    $sql = "SELECT customer_id, customerName, customerPhone from Customer";
+                    $result = $conn->query($sql);
 
+                    if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                    ?>
 
-
-        <div class="card">
-            <div class="card-body">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">ID</span></th> <!-- ID Attribute -->
-                            <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Name</span></th>  <!-- Name Attribute -->
-                            <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Phone Number</span></th>  <!-- Phone Number Attribute -->
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        <?php
-                        $sql = "SELECT customer_id, customerName, customerPhone from Customer";
-                        $result = $conn->query($sql);
-
-                        if ($result->num_rows > 0) {
-                        // output data of each row
-                        while($row = $result->fetch_assoc()) {
-                        ?>
-
-                        <tr>
-                            <td><?=$row["customer_id"]?></td>
-                            <td><?=$row["customerName"]?></td>
-                            <td><?=$row["customerPhone"]?></td>
-                            <td>
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>"> <!-- Edit Section-->
-                                    Edit
-                                </button>
-                                <div class="modal fade" id="editWeapons<?=$row['customer_id']?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editWeapons<?=$row['customer_id']?>Label" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="editWeapons<?=$row['customer_id']?>Label">Edit Customer Information</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form method="post" action="">
-                                                    <div class="mb-3">
-                                                        <label for="editWeapons<?=$row['customer_id']?>Name" class="form-label">Name</label>
-                                                        <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iName" value="<?=$row['customerName']?>"> <!-- customerName -->
-                                                        Phone Number
-                                                        <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iPhone" value="<?=$row['customerPhone']?>"> <!-- customerPhone -->
-                                                        <div id="editWeapons<?=$row['customer_id']?>Help" class="form-text">Edit info.</div>
-                                                    </div>
-                                                    <input type="hidden" name="iid" value="<?=$row['customer_id']?>">
-                                                    <input type="hidden" name="saveType" value="Edit">
-                                                    <input type="submit" class="btn btn-primary" value="Submit">
-                                                </form>
-                                            </div>
+                    <tr>
+                        <td><?=$row["customer_id"]?></td>
+                        <td><?=$row["customerName"]?></td>
+                        <td><?=$row["customerPhone"]?></td>
+                        <td>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>">
+                                <!-- Edit Section-->
+                                Edit
+                            </button>
+                            <div class="modal fade" id="editWeapons<?=$row['customer_id']?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editWeapons<?=$row['customer_id']?>Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="editWeapons<?=$row['customer_id']?>Label">Edit Customer Information</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="post" action="">
+                                                <div class="mb-3">
+                                                    <label for="editWeapons<?=$row['customer_id']?>Name" class="form-label">Name</label>
+                                                    <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iName" value="<?=$row['customerName']?>"> <!-- customerName -->
+                                                    Phone Number
+                                                    <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iPhone" value="<?=$row['customerPhone']?>"> <!-- customerPhone -->
+                                                    <div id="editWeapons<?=$row['customer_id']?>Help" class="form-text">Edit info.</div>
+                                                </div>
+                                                <input type="hidden" name="iid" value="<?=$row['customer_id']?>">
+                                                <input type="hidden" name="saveType" value="Edit">
+                                                <input type="submit" class="btn btn-primary" value="Submit">
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                            </td>
-                            <td>
-                                <form method="post" action=""> <!-- Delete section -->
-                                    <input type="hidden" name="iid" value="<?=$row['customer_id']?>" />
-                                    <input type="hidden" name="saveType" value="Delete">
-                                    <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
-                                </form>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td>
+                            <form method="post" action="">
+                                <!-- Delete section -->
+                                <input type="hidden" name="iid" value="<?=$row['customer_id']?>" />
+                                <input type="hidden" name="saveType" value="Delete">
+                                <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
+                            </form>
+                        </td>
+                    </tr>
 
-                        <?php
-                        }
-                        } else {
-                        echo "0 results";
-                        }
-                        $conn->close();
-                        ?>
+                    <?php
+                    }
+                    } else {
+                    echo "0 results";
+                    }
+                    $conn->close();
+                    ?>
 
-                    </tbody>
-                </table>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <br /> <!-- Space Break-->
+    <!-- Add New Button trigger modal -->
+    <button type="button" class="btn btn-primary" style="background-color:hotpink;" data-bs-toggle="modal" data-bs-target="#addWeapons">
+        <!-- Add New Section -->
+        Add New
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addWeapons" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addWeaponsLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="addWeaponsLabel">Add Customer Information</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" action="">
+                        <div class="mb-3">
+                            <label for="WeaponsName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="WeaponsName" aria-describedby="nameHelp" name="iName"> <!-- input name-->
+                            <input type="text" class="form-control" id="CustomerPhone" aria-describedby="nameHelp" name="iPhone"> <!-- input phone number-->
+                            <div id="nameHelp" class="form-text">Enter the Customer's info.</div>
+                        </div>
+                        <input type="hidden" name="saveType" value="Add">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
+        </div>
+    </div>
+
+
+
+    <a class="btn btn-primary" style="background-color:hotpink;" href="index.php" role="button">Home</a> <!-- Bottom Home Button-->
+
+    <div class="fw-bold ">
+        <!-- footer divs -->
+        <hr />
+        <div>
+            <!-- first row divs in footer-->
+            <div style="width: 400px; float: left;">
+                Privacy Policy
+            </div>
+
+            <div style="width:400px; float:left;">
+                Terms & Conditions
+            </div>
+
+            <div style="width: 400px; float: left;">
+                Do Not Sell or Share My Personal Information
+            </div>
+
         </div>
 
 
 
-            <br /> <!-- Space Break-->
-
-            <!-- Add New Button trigger modal -->
-            <button type="button" class="btn btn-primary" style="background-color:hotpink;" data-bs-toggle="modal" data-bs-target="#addWeapons"> <!-- Add New Section -->
-                Add New
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="addWeapons" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addWeaponsLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="addWeaponsLabel">Add Customer Information</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form method="post" action="">
-                                <div class="mb-3">
-                                    <label for="WeaponsName" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="WeaponsName" aria-describedby="nameHelp" name="iName"> <!-- input name-->
-                                    <input type="text" class="form-control" id="CustomerPhone" aria-describedby="nameHelp" name="iPhone"> <!-- input phone number-->
-                                    <div id="nameHelp" class="form-text">Enter the Customer's info.</div>
-                                </div>
-                                <input type="hidden" name="saveType" value="Add">
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+        <div>
+            <div style="width: 400px; float: left;">
+                Cookie Settings
             </div>
 
-
-
-            <a class="btn btn-primary" style="background-color:hotpink;" href="index.php" role="button">Home</a> <!-- Bottom Home Button-->
-
-            <div class="fw-bold ">
-                <!-- footer divs -->
-                <hr />
-                <div>
-                    <!-- first row divs in footer-->
-                    <div style="width: 400px; float: left;">
-                        Privacy Policy
-                    </div>
-
-                    <div style="width:400px; float:left;">
-                        Terms & Conditions
-                    </div>
-
-                    <div style="width: 400px; float: left;">
-                        Do Not Sell or Share My Personal Information
-                    </div>
-
-                </div>
-
-
-
-                <div>
-                    <div style="width: 400px; float: left;">
-                        Cookie Settings
-                    </div>
-
-                    <div style="width: 400px; float: left;">
-                        @2018 - 2022 The Ice Scream Comapny Inc.
-                    </div>
-
-                </div>
-
-
-
+            <div style="width: 400px; float: left;">
+                @2018 - 2022 The Ice Scream Comapny Inc.
             </div>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+        </div>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
