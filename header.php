@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ice Scream Company</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
-
-    <nav class="navbar navbar-custom "  style="max-width: 100%;">
+    <nav class="navbar navbar-custom " style="max-width: 100%;">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="index.php">
-            <img src="https://lh4.googleusercontent.com/qPPSpyQ_5wq8NLWHvEFzkzeANDOsdJjKXwTDzxZHzVuFswO544iQn6WqZRFSEdL-0U-0oS_YMm1_3W3S_eQJ0QtTT505X2JZRxMnd3SOz117b8PTDViwcQMqmKvFCNrd7xBtycaYRVgULd0uYr7vrpyyi3_eAHtzUkTFnKRNmqfOP25HP7H2VwKh0aDcIw" alt="Ice Scream Image" style="height:50px;">
-            </a> 
+                <img src="https://lh4.googleusercontent.com/qPPSpyQ_5wq8NLWHvEFzkzeANDOsdJjKXwTDzxZHzVuFswO544iQn6WqZRFSEdL-0U-0oS_YMm1_3W3S_eQJ0QtTT505X2JZRxMnd3SOz117b8PTDViwcQMqmKvFCNrd7xBtycaYRVgULd0uYr7vrpyyi3_eAHtzUkTFnKRNmqfOP25HP7H2VwKh0aDcIw" alt="Ice Scream Image" style="height:50px;">
+            </a>
             <!-- Logo brand in navbar -->
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,18 +28,20 @@
                         <a class="nav-link active" aria-current="page" href="index.php"><span onmouseover="style.color='blue'" onmouseout="style.color='black'" style="color: black"> Home </span> </a> <!-- go to home page -->
                     </li>
 
-                    <li class="nav-item"> <!-- single-purpose link to another page -->
+                    <li class="nav-item">
+                        <!-- single-purpose link to another page -->
                         <a class="nav-link" href="aboutus.php"> <span onmouseover="style.color='blue'" onmouseout="style.color='black'" style="color: black">About Us </span> </a>
                     </li>
 
-                    <li class="nav-item dropdown"> <!-- drop down menu part-->
+                    <li class="nav-item dropdown">
+                        <!-- drop down menu part-->
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span onmouseover="style.color='blue'" onmouseout="style.color='black'" style="color: black"> Shop </span> 
+                            <span onmouseover="style.color='blue'" onmouseout="style.color='black'" style="color: black"> Shop </span>
 
                         </a>
-                        
-                      
-                        
+
+
+
                         <ul class="dropdown-menu">
 
                             <li><a class="dropdown-item" href="customer.php">Register!</a></li>
@@ -48,7 +53,7 @@
 
                         </ul>
                     </li>
-                    
+
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
