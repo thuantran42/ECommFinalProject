@@ -167,7 +167,7 @@
         </div>
     </div>
 
-    <br /> <!-- Space break--> 
+    <br /> <!-- Space break-->
 
     <div class="checkout">
         <!-- Check out Box -->
@@ -200,7 +200,7 @@
         ?>
 
 
-        
+
         <?php
         }
         } else {
@@ -208,16 +208,21 @@
         }
         $conn->close();
         ?>
-        <input type="text" id="quantityCheck1" class="quantity" value="<?=$rowcount?>"> <!-- Error, fix later-->
+        <form method="post" action="receipt.php" >
+            <input type="text" id="quantityCheck1" class="quantity" name ="quantityCheck" value="<?=$rowcount?>"> <!-- Error, fix later-->
 
-        <p class="total">Total: <span id="total">$</span></p>
-        <button class="btn">Submit Order</button>
+            <p class="total">Total: <span id="total">$</span></p>
+            <button class="btn">Submit Order</button>
+
+        </form>
+        
 
     </div>
 
     <br /> <!-- Space break -->
 
     <a class="btn btn-primary" style="background-color:hotpink;" href="index.php" role="button">Home</a>
+    <!--<a class="btn btn-primary" style="background-color:hotpink;" href="receipt.php" role="button">Home</a>-->
 
     <div class="fw-bold ">
         <!-- footer divs -->
