@@ -42,46 +42,64 @@
         </div>
     </div>-->
     <br /> <!-- Space break -->
+    Receipt
 
-     Receipt 
+    <?php
+    
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    echo '<div class="alert alert-success" role="alert"><?$_POST['quantityCheck']?></div>';
+
+   
+    }
+    ?>
 
 
+    <form method="post" action="receipt.php">
+        <input type="text" id="quantityCheck1" class="quantity" value="<?=$rowcount?>"> <!-- Error, fix later-->
 
-        <div class="fw-bold ">
-            <!-- footer divs -->
-            <hr />
-            <div>
-                <!-- first row divs in footer-->
-                <div style="width: 400px; float: left;">
-                    Privacy Policy
-                </div>
+        <p class="total">Total: <span id="total">$</span></p>
+        <button class="btn">Submit Order</button>
 
-                <div style="width:400px; float:left;">
-                    Terms & Conditions
-                </div>
+    </form>
 
-                <div style="width: 400px; float: left;">
-                    Do Not Sell or Share My Personal Information
-                </div>
 
+    <div class="fw-bold ">
+        <!-- footer divs -->
+        <hr />
+        <div>
+            <!-- first row divs in footer-->
+            <div style="width: 400px; float: left;">
+                Privacy Policy
             </div>
 
-
-
-            <div>
-                <div style="width: 400px; float: left;">
-                    Cookie Settings
-                </div>
-
-                <div style="width: 400px; float: left;">
-                    @2018 - 2022 The Ice Scream Comapny Inc.
-                </div>
-
+            <div style="width:400px; float:left;">
+                Terms & Conditions
             </div>
 
-
+            <div style="width: 400px; float: left;">
+                Do Not Sell or Share My Personal Information
+            </div>
 
         </div>
+
+
+
+        <div>
+            <div style="width: 400px; float: left;">
+                Cookie Settings
+            </div>
+
+            <div style="width: 400px; float: left;">
+                @2018 - 2022 The Ice Scream Comapny Inc.
+            </div>
+
+        </div>
+
+
+
+    </div>
 
 
     </div>
@@ -91,4 +109,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
-
