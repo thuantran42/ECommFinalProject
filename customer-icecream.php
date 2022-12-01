@@ -190,7 +190,7 @@
         $sql = "select *
         FROM IceCream";
         $result = $conn->query($sql);
-        $countRow = count($sql);
+        $countRow = count($result);
 
         if ($result->num_rows > 0) {
         // output data of each row
