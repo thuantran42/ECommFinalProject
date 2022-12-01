@@ -1,7 +1,7 @@
 <?php require_once('header.php');?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Enter your info</title>
+<title>Ice cream customization</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -47,29 +47,29 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
     switch ($_POST['saveType']) {
     case 'Add':
-    $sqlAdd = "insert into Customer (customerName, customerPhone, customerAddress) values (?, ?, ?)";
+    $sqlAdd = "insert into IceCream (icecreamName, icecreamFlavor, icecreamScoop) values (?, ?, ?)";
     $stmtAdd = $conn->prepare($sqlAdd);
-    $stmtAdd->bind_param("sss", $_POST['iName'], $_POST['iPhone'], $_POST['iAddress']);
+    $stmtAdd->bind_param("sss", $_POST['iName'], $_POST['iFlavor'], $_POST['iScoop']);
     $stmtAdd->execute();
-    echo '<div class="alert alert-success" role="alert">New Customer info added!</div>';
+    echo '<div class="alert alert-success" role="alert">New IceCream info added!</div>';
 
     break;
 
     case 'Edit':
-    $sqlEdit = "update Customer set customerName=?,customerPhone=?,customerAddress=? where customer_id=?";
+    $sqlEdit = "update IceCream set icecreamName=?,icecreamFlavor=?,icecreamScoop=? where icecream_id=?";
     $stmtEdit = $conn->prepare($sqlEdit);
-    $stmtEdit->bind_param("sssi", $_POST['iName'], $_POST['iPhone'], $_POST['iAddress'], $_POST['iid']);
+    $stmtEdit->bind_param("sssi", $_POST['iName'], $_POST['iFlavor'], $_POST['iScoop'], $_POST['iid']);
     $stmtEdit->execute();
-    echo '<div class="alert alert-success" role="alert">Customer Info edited!</div>';
+    echo '<div class="alert alert-success" role="alert">Ice Cream Info edited!</div>';
 
     break;
 
     case 'Delete':
-    $sqlDelete = "delete from Customer where customer_id=?";
+    $sqlDelete = "delete from IceCream where icecream_id=?";
     $stmtDelete = $conn->prepare($sqlDelete);
     $stmtDelete->bind_param("i", $_POST['iid']);
     $stmtDelete->execute();
-    echo '<div class="alert alert-success" role="alert">Customer info deleted.</div>';
+    echo '<div class="alert alert-success" role="alert">Ice Cream info deleted.</div>';
 
     break;
 
@@ -82,8 +82,8 @@
 
     <div class="card">
         <div class="card-header">
-            <h1> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Customer(s) info</span></h1> <!-- Customer Info Title-->
-            <h5> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">You got friends that want to shop too? Add them here!</span></h5>
+            <h1> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">IceCream(s) info</span></h1> <!-- Ice Cream Info Title-->
+            <h5> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Got an idea? Add your flavors here!</span></h5>
         </div>
     </div>
 
@@ -105,15 +105,15 @@
                 <thead>
                     <tr>
                         <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">ID</span></th> <!-- ID Attribute -->
-                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Name</span></th>  <!-- Name Attribute -->
-                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Phone Number</span></th>  <!-- Phone Number Attribute -->
-                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Address</span></th>  <!-- Address Attribute -->
+                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Ice Scream Name</span></th>  <!-- Flavor Name Attribute -->
+                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Flavor</span></th>  <!-- Flavor Attribute -->
+                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Scoop</span></th>  <!-- Scoop Attribute -->
                     </tr>
                 </thead>
                 <tbody>
 
                     <?php
-                    $sql = "SELECT customer_id, customerName, customerPhone, customerAddress from Customer";
+                    $sql = "SELECT icecream_id, icecreamName, icecreamFlavor, icecreamScoop from IceCream";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
@@ -122,34 +122,34 @@
                     ?>
 
                     <tr>
-                        <td><?=$row["customer_id"]?></td>
-                        <td><?=$row["customerName"]?></td>
-                        <td><?=$row["customerPhone"]?></td>
-                        <td><?=$row["customerAddress"]?></td>
+                        <td><?=$row["icecream_id"]?></td>
+                        <td><?=$row["icecreamName"]?></td>
+                        <td><?=$row["icecreamFlavor"]?></td>
+                        <td><?=$row["icecreamScoop"]?></td>
                         <td>
-                            <button type="button" class="btn" style="background-color:hotpink;" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['customer_id']?>">
+                            <button type="button" class="btn" style="background-color:hotpink;" data-bs-toggle="modal" data-bs-target="#editWeapons<?=$row['icecream_id']?>">
                                 <!-- Edit Section-->
                                 Edit
                             </button>
-                            <div class="modal fade" id="editWeapons<?=$row['customer_id']?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editWeapons<?=$row['customer_id']?>Label" aria-hidden="true">
+                            <div class="modal fade" id="editWeapons<?=$row['icecream_id']?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editWeapons<?=$row['icecream_id']?>Label" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="editWeapons<?=$row['customer_id']?>Label">Edit Customer Information</h1>
+                                            <h1 class="modal-title fs-5" id="editWeapons<?=$row['icecream_id']?>Label">Edit Ice Cream Information</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <form method="post" action="">
                                                 <div class="mb-3">
-                                                    <label for="editWeapons<?=$row['customer_id']?>Name" class="form-label">Name</label>
-                                                    <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iName" value="<?=$row['customerName']?>"> <!-- customerName -->
-                                                    Phone Number
-                                                    <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iPhone" value="<?=$row['customerPhone']?>"> <!-- customerPhone -->
-                                                    Address (Where we delivery the sweets to you!)
-                                                    <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iAddress" value="<?=$row['customerAddress']?>"> <!-- customerAddress-->
-                                                    <div id="editWeapons<?=$row['customer_id']?>Help" class="form-text">Edit info.</div>
+                                                    <label for="editWeapons<?=$row['icecream_id']?>Name" class="form-label">Ice Cream Name</label>
+                                                    <input type="text" class="form-control" id="editWeapons<?=$row['icecream_id']?>Name" aria-describedby="editWeapons<?=$row['icecream_id']?>Help" name="iName" value="<?=$row['icecreamName']?>"> <!-- icecreamName -->
+                                                    What flavor(s) do you really really want?
+                                                    <input type="text" class="form-control" id="editWeapons<?=$row['icecream_id']?>Name" aria-describedby="editWeapons<?=$row['icecream_id']?>Help" name="iFlavor" value="<?=$row['icecreamFlavor']?>"> <!-- icecreamFlavor -->
+                                                    What's the correct amount of scoops you like?
+                                                    <input type="text" class="form-control" id="editWeapons<?=$row['icecream_id']?>Name" aria-describedby="editWeapons<?=$row['icecream_id']?>Help" name="iScoop" value="<?=$row['icecreamScoop']?>"> <!-- icecreamScoop-->
+                                                    <div id="editWeapons<?=$row['icecream_id']?>Help" class="form-text">Edit info.</div>
                                                 </div>
-                                                <input type="hidden" name="iid" value="<?=$row['customer_id']?>">
+                                                <input type="hidden" name="iid" value="<?=$row['icecream_id']?>">
                                                 <input type="hidden" name="saveType" value="Edit">
                                                 <input type="submit" class="btn btn-primary" value="Submit">
                                             </form>
@@ -161,7 +161,7 @@
                         <td>
                             <form method="post" action="">
                                 <!-- Delete section -->
-                                <input type="hidden" name="iid" value="<?=$row['customer_id']?>" />
+                                <input type="hidden" name="iid" value="<?=$row['icecream_id']?>" />
                                 <input type="hidden" name="saveType" value="Delete">
                                 <input type="submit" class="btn" style="background-color:hotpink;" onclick="return confirm('Are you sure?')" value="Delete">
                             </form>
@@ -191,14 +191,13 @@
     </button>
 
     <br /> <!-- Space break-->
-
     <!-- Modal -->
     <div class="modal fade" id="addWeapons" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addWeaponsLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="addWeaponsLabel">Add Customer Information</h1>
+                    <h1 class="modal-title fs-5" id="addWeaponsLabel">Add Ice Cream Information</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -206,13 +205,13 @@
 
                     <form method="post" action="">
                         <div class="mb-3">
-                            <label for="WeaponsName" class="form-label">Name</label>
+                            <label for="WeaponsName" class="form-label">Ice cream Name</label>
                             <input type="text" class="form-control" id="WeaponsName" aria-describedby="nameHelp" name="iName"> <!-- input name-->
-                            Phone Number
-                            <input type="text" class="form-control" id="CustomerPhone" aria-describedby="nameHelp" name="iPhone"> <!-- input phone number-->
-                            Address (Where we will deliver the sweets to you!)
-                            <input type="text" class="form-control" id="CustomerAddress" aria-describedby="nameHelp" name="iAddress">  <!-- input address-->
-                            <div id="nameHelp" class="form-text">Enter the Customer's info.</div>
+                            What flavor(s) do you want?
+                            <input type="text" class="form-control" id="IceCreamPhone" aria-describedby="nameHelp" name="iFlavor"> <!-- input flavor-->
+                            How many scoops do you want?
+                            <input type="text" class="form-control" id="IceCreamScoop" aria-describedby="nameHelp" name="iScoop">  <!-- input scoop-->
+                            <div id="nameHelp" class="form-text">Enter the Ice Cream's info.</div>
                         </div>
                         <input type="hidden" name="saveType" value="Add">
                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -282,4 +281,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
-
