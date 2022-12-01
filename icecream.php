@@ -233,7 +233,7 @@
         <div class="card-body">
             You can get as many scoops as you want if you can hold it all of course! <br />
             All ice screams will be served in a screamtastic cup! <br />
-            Name you ice cream whatever you have in mind and we'll try to match that idea of yours! <br />
+            Name your ice cream whatever you have in mind and we'll try to match that idea of yours! <br />
         </div>
     </div>
 
