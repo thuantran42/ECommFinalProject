@@ -82,7 +82,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h1> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">IceCream(s) info</span></h1> <!-- Ice Cream Info Title-->
+            <h1> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Ice Cream(s) info</span></h1> <!-- Ice Cream Info Title-->
             <h5> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Got an idea? Add your flavors here!</span></h5>
         </div>
     </div>
@@ -106,8 +106,8 @@
                     <tr>
                         <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">ID</span></th> <!-- ID Attribute -->
                         <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Ice Scream Name</span></th>  <!-- Flavor Name Attribute -->
-                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Flavor</span></th>  <!-- Flavor Attribute -->
-                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Scoop</span></th>  <!-- Scoop Attribute -->
+                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Flavor + topping(s)</span></th>  <!-- Flavor Attribute -->
+                        <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Scoop(s)</span></th>  <!-- Scoop Attribute -->
                     </tr>
                 </thead>
                 <tbody>
