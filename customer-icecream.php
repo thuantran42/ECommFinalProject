@@ -190,12 +190,14 @@
         $sql = "select *
         FROM IceCream";
         $result = $conn->query($sql);
-        $rows = count($result);
+        
 
         if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
         ?>
+
+        $rows = count(num_rows);
         <input type="text" class="quantity" value="<?=$row?>">
 
         <p class="total">Total: <span id="total">$4.99</span></p>
