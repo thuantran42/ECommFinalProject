@@ -6,8 +6,9 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
   </head>
 
 
@@ -29,19 +30,17 @@
 <body>
 
     <!--<div>-->
-
-        <!-- you can experiment opacity: 0.3 for transparency -->
-        <!--<div style="color:lightpink;" class="text-center fw-bold text-uppercase">-->
-        <!-- Title with Picture-->
-        <!--<h1> <span class="badge bg-secondary">Welcome to The Ice Scream Company</span></h1>
+    <!-- you can experiment opacity: 0.3 for transparency -->
+    <!--<div style="color:lightpink;" class="text-center fw-bold text-uppercase">-->
+    <!-- Title with Picture-->
+    <!--<h1> <span class="badge bg-secondary">Welcome to The Ice Scream Company</span></h1>
 
     </div>-->
-
-        <!--<div class="card">
-            <div class="card-body">
-                This is some text within a card body.
-            </div>
-        </div>-->
+    <!--<div class="card">
+        <div class="card-body">
+            This is some text within a card body.
+        </div>
+    </div>-->
     <br /> <!-- Space break -->
 
     <div>
@@ -57,15 +56,15 @@
             <div class="card-body">
                 <p>
                     Ice Scream was started in Oklahoma City, Oklahoma and it is founded by Trae Tran.
-                    He saw great ambition and creativity in ice cream in hopes <br /> 
+                    He saw great ambition and creativity in ice cream in hopes <br />
                     to appeal to all ice cream lovers. In 2015, Trae worked at a small ice cream shop that he was super excited to work every afternoon. <br />
                     Serving the customers with various flavors has always given me joy. However, due to seriously bad inflation, the ice cream shop <br />
-                    was forced to close and he was out of the job. From this day foward, he studied hard at the University of Oklahoma about <br /> 
+                    was forced to close and he was out of the job. From this day foward, he studied hard at the University of Oklahoma about <br />
                     businesses, ice cream stores, and systems. <br />
                     <br />
                     After getting the degree along with great colleagues, the first Ice Scream Company shop was established in Oklahoma City, Oklahoma. <br />
                     Trae had the amazing idea of letting customers name the ice cream they want and the employees will come up with the given ingredients to make <br />
-                    the ice cream for them! 
+                    the ice cream for them!
                 </p>
 
             </div>
@@ -147,11 +146,11 @@
                     Follow us on Linkedin, Instagram, Youtube, and Twitter! <br />
 
                     <br />
-                    <a href="https://www.linkedin.com/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgd4JdyuHOYjmtScEwT2PirsDOyS-6XTAIoA&usqp=CAU" alt="Linkedin link" style="height:50px; width:50px;" /> </a> 
-                    <a href="https://www.instagram.com/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibNm4alTFbffyXvLcZgMEsrIqnyK66LeszQ&usqp=CAU" alt="Instgram link" style="height:50px; width:75px;"/> </a> 
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQivdaPpv3KvpL8RUJFo-GLIO6LciuTLhdvVw&usqp=CAU" alt="Youtube link" style="height:50px; width:50px;"/> </a> 
-                    <a href="https://twitter.com/"> <img src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" alt="Twitter link" style="height:50px; width:50px;"/> </a>
-                    
+                    <a href="https://www.linkedin.com/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgd4JdyuHOYjmtScEwT2PirsDOyS-6XTAIoA&usqp=CAU" alt="Linkedin link" style="height:50px; width:50px;" /> </a>
+                    <a href="https://www.instagram.com/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibNm4alTFbffyXvLcZgMEsrIqnyK66LeszQ&usqp=CAU" alt="Instgram link" style="height:50px; width:75px;" /> </a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQivdaPpv3KvpL8RUJFo-GLIO6LciuTLhdvVw&usqp=CAU" alt="Youtube link" style="height:50px; width:50px;" /> </a>
+                    <a href="https://twitter.com/"> <img src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" alt="Twitter link" style="height:50px; width:50px;" /> </a>
+
                 </p>
 
             </div>
