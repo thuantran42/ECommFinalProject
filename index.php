@@ -6,12 +6,15 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
 
 
-<script> /* Script tag */
+<script>
+    /* Script tag */
 </script>
 
 <style>
@@ -23,7 +26,6 @@
         /*margin:auto;*/
         /*background-position: center center;*/
         /*background-attachment: fixed;*/
-        
     }
 </style>
 
@@ -31,18 +33,18 @@
 <body>
 
     <div>
-        
+
         <!-- you can experiment opacity: 0.3 for transparency -->
         <!--<div style="color:lightpink;" class="text-center fw-bold text-uppercase">-->
-            <!-- Title with Picture-->
-            <!--<h1> <span class="badge bg-secondary">Welcome to The Ice Scream Company</span></h1>
+        <!-- Title with Picture-->
+        <!--<h1> <span class="badge bg-secondary">Welcome to The Ice Scream Company</span></h1>
 
         </div>-->
 
 
         <div class="text-center" style="width:1200px; margin-left:auto;margin-right:auto;">
 
-            <img src="https://lh5.googleusercontent.com/0Y7oWA31FIRMs5w_WNBABK7_rABy_r7L6TBKWzXUC8vROi7FweARrXq-QdrHo4EXyFY5L0SCx2cHmQdtQJlfJFvHLEelTBTFcchTFhnjbCTRh716RwKIwZwyxbA53nWfEXszWwIFaD9AgsF5ZqDnFyyenhr2kgBqkS9UgUB_gnuqZt-4K77b9k_CuwRFow" class="img-fluid" alt="Ice Scream Image" > <!-- image pointer-->
+            <img src="https://lh5.googleusercontent.com/0Y7oWA31FIRMs5w_WNBABK7_rABy_r7L6TBKWzXUC8vROi7FweARrXq-QdrHo4EXyFY5L0SCx2cHmQdtQJlfJFvHLEelTBTFcchTFhnjbCTRh716RwKIwZwyxbA53nWfEXszWwIFaD9AgsF5ZqDnFyyenhr2kgBqkS9UgUB_gnuqZt-4K77b9k_CuwRFow" class="img-fluid" alt="Ice Scream Image"> <!-- image pointer-->
         </div>
 
 
@@ -58,7 +60,8 @@
         <div class="fw-bold ">
             <!-- footer divs -->
             <hr />
-            <div> <!-- first row divs in footer-->
+            <div>
+                <!-- first row divs in footer-->
                 <div style="width: 400px; float: left;">
                     Privacy Policy
                 </div>
@@ -72,7 +75,7 @@
                 </div>
 
             </div>
-            
+
 
 
             <div>
@@ -84,9 +87,9 @@
                     @2018 - 2022 The Ice Scream Comapny Inc.
                 </div>
 
-            </div> 
+            </div>
 
-            
+
 
         </div>
 
