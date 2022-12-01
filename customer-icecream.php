@@ -222,7 +222,7 @@
     <br /> <!-- Space break -->
 
     <a class="btn btn-primary" style="background-color:hotpink;" href="index.php" role="button">Home</a>
-    <!--<a class="btn btn-primary" style="background-color:hotpink;" href="receipt.php" role="button">Home</a>-->
+    <a class="btn btn-primary" style="background-color:hotpink;" href="receipt.php" role="button">Home</a>
 
     <div class="fw-bold ">
         <!-- footer divs -->
