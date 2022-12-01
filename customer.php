@@ -8,6 +8,21 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+<script>
+    function webpageReadyFun() {
+        $("#tbl1").DataTable({
+            lengthMenu: [10, 20, 40, 60],
+            pageLength: 10,
+
+        });
+        //alert("OK");
+    }
+
+    $(document).ready(webpageReadyFun);
+
+</script>
+
 </head>
 
 <style>
@@ -22,19 +37,6 @@
     }
 </style>
 
-<script>
-    function webpageReadyFun() {
-        $( "#tbl1" ).DataTable({
-            lengthMenu: [10, 20, 40, 60],
-            pageLength: 10,
-
-        });
-        //alert("OK");
-    }
-
-    $( document ).ready(webpageReadyFun);
-
-</script>
 
 
 <body>
