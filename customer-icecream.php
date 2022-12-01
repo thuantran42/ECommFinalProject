@@ -199,7 +199,13 @@
         <input type="text" class="quantity" value="<?=$row?>">
 
         <p class="total">Total: <span id="total">$4.99</span></p>
-
+        <?php
+        }
+        } else {
+        echo "0 results";
+        }
+        $conn->close();
+        ?>
         <button class="btn">Submit Order</button>
 
     </div>
