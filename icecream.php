@@ -226,13 +226,14 @@
 
     <div class="card">
         <div class="card-header">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp9MN2zz3-tN_MxO9BLyt2-kx8mz7gHXya3Q&usqp=CAU" class="card-img-top" alt="picture of screaming" style="height:100px; width:100px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGSrbA1hlEUo_ONWeyq6v1vtz9dGatPXkoiQ&usqp=CAU" class="card-img-top" alt="picture of ice cream" style="height:100px; width:100px;">
 
             <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink"> Did you know?</span>
         </div>
         <div class="card-body">
-            The Ice Scream company is committed to make icy and organized purchases for our customers! <br />
-            This way, we can tag the name next to their order and see which item is theirs! <br />
+            You can get as many scoops as you want if you can hold it all of course! <br />
+            All ice screams will be served in a screamtastic cup! <br />
+            Name you ice cream whatever you have in mind and we'll try to match that idea of yours! <br />
         </div>
     </div>
 
