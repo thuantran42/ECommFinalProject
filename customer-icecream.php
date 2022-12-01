@@ -24,6 +24,9 @@
 </style>
 
 <body>
+
+    <br /> <!-- Space Break-->
+
     <div class="card">
         <div class="card-header">
             <h1> <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Order(s) info</span></h1> <!-- Order Info Title-->
@@ -98,7 +101,7 @@
                         <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Ice Cream ID</span></th>
                         <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Ice Cream Name</span></th>
 
-                        
+
                         <th></th>
                         <th></th>
                         <th></th>
@@ -144,45 +147,49 @@
                     ?>
                 </tbody>
             </table>
-         </div>
-     </div>
+        </div>
+    </div>
 
-            <div class="fw-bold ">
-                <!-- footer divs -->
-                <hr />
-                <div>
-                    <!-- first row divs in footer-->
-                    <div style="width: 400px; float: left;">
-                        Privacy Policy
-                    </div>
+    <br /> <!-- Space break -->
 
-                    <div style="width:400px; float:left;">
-                        Terms & Conditions
-                    </div>
+    <a class="btn btn-primary"  style="background-color:hotpink;" href="index.php" role="button">Home</a>
 
-                    <div style="width: 400px; float: left;">
-                        Do Not Sell or Share My Personal Information
-                    </div>
-
-                </div>
-
-
-
-                <div>
-                    <div style="width: 400px; float: left;">
-                        Cookie Settings
-                    </div>
-
-                    <div style="width: 400px; float: left;">
-                        @2018 - 2022 The Ice Scream Comapny Inc.
-                    </div>
-
-                </div>
-
-
-
+    <div class="fw-bold ">
+        <!-- footer divs -->
+        <hr />
+        <div>
+            <!-- first row divs in footer-->
+            <div style="width: 400px; float: left;">
+                Privacy Policy
             </div>
-            <a class="btn btn-primary" href="index.php" role="button">Home</a>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+            <div style="width:400px; float:left;">
+                Terms & Conditions
+            </div>
+
+            <div style="width: 400px; float: left;">
+                Do Not Sell or Share My Personal Information
+            </div>
+
+        </div>
+
+
+
+        <div>
+            <div style="width: 400px; float: left;">
+                Cookie Settings
+            </div>
+
+            <div style="width: 400px; float: left;">
+                @2018 - 2022 The Ice Scream Comapny Inc.
+            </div>
+
+        </div>
+
+
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
