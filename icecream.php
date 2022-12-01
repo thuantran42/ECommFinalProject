@@ -226,7 +226,7 @@
 
     <div class="card">
         <div class="card-header">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGSrbA1hlEUo_ONWeyq6v1vtz9dGatPXkoiQ&usqp=CAU" class="card-img-top" alt="picture of ice cream" style="height:100px; width:100px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRknDM1hIzHKglngkM0OdjLeXRI3o0vHeFEVg&usqp=CAU" class="card-img-top" alt="picture of ice cream" style="height:100px; width:100px;">
 
             <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink"> Did you know?</span>
         </div>
