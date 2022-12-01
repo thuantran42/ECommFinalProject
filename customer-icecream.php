@@ -200,7 +200,7 @@
         ?>
 
 
-        <input type="text" class="quantity" value="<?=$rowcount?>"> <!-- Error, fix later-->
+        <input type="text" id="quantityCheck1" class="quantity" value="<?=$rowcount?>"> <!-- Error, fix later-->
 
         <p class="total">Total: <span id="total">$</span></p>
         <?php
