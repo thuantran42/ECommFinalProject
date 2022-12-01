@@ -10,16 +10,13 @@
 <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
 <script>
-    function webpageReadyFun() {
-        $("#tbl1").DataTable({
-            lengthMenu: [10, 20, 40, 60],
-            pageLength: 10,
-
-        });
-        //alert("OK");
-    }
-
-    $(document).ready(webpageReadyFun);
+    $(document).ready(function () {
+        $(".checkout").on("keyup", ".quantity", function () {
+            var price = +$(".price").data("price");
+            var quantity = +$(this).val();
+            $("#total").text("$" + price * quantity);
+        })
+    })
 </script>
 
 </head>
@@ -33,6 +30,13 @@
         /*margin:auto;*/
         /*background-position: center center;*/
         /*background-attachment: fixed;*/
+    }
+    .checkout {
+        height: 300px;
+        width: 400px;
+        margin: 20px auto;
+        border: 2px solid black;
+        text-align: center;
     }
 </style>
 
@@ -108,7 +112,7 @@
 
     <div class="card">
         <div class="card-body">
-            <table id="tbl1"class="table table-striped">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Ice Cream ID</span></th>
@@ -163,9 +167,23 @@
         </div>
     </div>
 
+    <br /> <!-- Space break--> 
+
+    <div class="checkout">
+        <h1 class="title">Checkout</h1>
+        <p class="price" data-price="4.99">$4.99 per Juice</p>
+        <p class="description">Quantity:</p>
+        <input type="text" class="quantity" value="1">
+
+        <p class="total">Total: <span id="total">$4.99</span></p>
+
+        <button class="btn">Submit Order</button>
+
+    </div>
+
     <br /> <!-- Space break -->
 
-    <a class="btn btn-primary"  style="background-color:hotpink;" href="index.php" role="button">Home</a>
+    <a class="btn btn-primary" style="background-color:hotpink;" href="index.php" role="button">Home</a>
 
     <div class="fw-bold ">
         <!-- footer divs -->
@@ -202,7 +220,7 @@
 
 
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
