@@ -50,7 +50,7 @@
             die("Connection failed: " . $conn->connect_error);
             }
 
-            $sql = "select customer_id, customerName,
+            $sql = "select customer_id, customerName
             FROM Customer";
             $result = $conn->query($sql);
 
@@ -103,7 +103,7 @@
             die("Connection failed: " . $conn->connect_error);
             }
 
-            $sql = "select icecream_id, icecreamName,
+            $sql = "select icecream_id, icecreamName
             FROM IceCream";
             $result = $conn->query($sql);
 
