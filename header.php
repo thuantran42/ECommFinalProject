@@ -39,9 +39,9 @@
                         
                         <ul class="dropdown-menu">
 
-                            <li><a class="dropdown-item" href="customer.php">Enter your info</a></li>
-                            <li><a class="dropdown-item" href="icecream.php">Describe your ice cream</a></li>
-                            <li><a class="dropdown-item" href="customer-icecream.php">What's your offer?'</a></li>
+                            <li><a class="dropdown-item" href="customer.php">Register!</a></li>
+                            <li><a class="dropdown-item" href="icecream.php">Create your Ice Scream!</a></li>
+                            <li><a class="dropdown-item" href="customer-icecream.php">Orders</a></li>
                             <li><a class="dropdown-item" href="deals.php">Deals</a></li>
                             <li><a class="dropdown-item" href="promotion.php">Promotion</a></li>
 
