@@ -192,7 +192,7 @@
         $result = $conn->query($sql);
         $rowcount=mysqli_num_rows($result);
 
-        printf("Result set has %d rows.\n",$rowcount);
+        
 
         if ($result->num_rows > 0) {
         // output data of each row
@@ -200,9 +200,9 @@
         ?>
 
 
-        <input type="text" class="quantity" value="<?=$rowcount?>">
+        <input type="text" class="quantity" value="<?=$rowcount?>"> <!-- Error, fix later-->
 
-        <p class="total">Total: <span id="total">$5.00</span></p>
+        <p class="total">Total: <span id="total">$</span></p>
         <?php
         }
         } else {
