@@ -175,9 +175,26 @@
         <p class="price" data-price="4.99">$5.00 per Ice Cream (fixed)</p>
         <p class="description">Quantity:</p>
         <?php
-        $result = mysql_query("SELECT * FROM IceCream");
+        $servername = "localhost";
+        $username = "traeoucr_homework3User";
+        $password = "mysqltt1024332";
+        $dbname = "traeoucr_ecommfinalproject";
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "select *
+        FROM IceCream";
+        $result = $conn->query($sql);
         $rows = mysql_num_rows($result);
-        echo "There are " . $rows . " ice creams";
+
+        if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
         ?>
         <input type="text" class="quantity" value="<?=$row?>">
 
