@@ -35,7 +35,7 @@
     case 'Edit':
     $sqlEdit = "update Customer set customerName=?,customerPhone=? where customer_id=?";
     $stmtEdit = $conn->prepare($sqlEdit);
-    $stmtEdit->bind_param("si", $_POST['iName'], $_POST['iPhone'], $_POST['iid']);
+    $stmtEdit->bind_param("ssi", $_POST['iName'], $_POST['iPhone'], $_POST['iid']);
     $stmtEdit->execute();
     echo '<div class="alert alert-success" role="alert">Customer Info edited.</div>';
 
@@ -95,7 +95,8 @@
                                     <form method="post" action="">
                                         <div class="mb-3">
                                             <label for="editWeapons<?=$row['customer_id']?>Name" class="form-label">Name</label>
-                                            <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row["customer_id"]?>Help" name="iName" value="<?=$row['customerName']?>">
+                                            <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iName" value="<?=$row['customerName']?>">
+                                            <input type="text" class="form-control" id="editWeapons<?=$row['customer_id']?>Name" aria-describedby="editWeapons<?=$row['customer_id']?>Help" name="iPhone" value="<?=$row['customerPhone']?>">
                                             <div id="editWeapons<?=$row[" customer_id"]?>Help" class="form-text">Enter the customer's name.</div>
                                         </div>
                                         <input type="hidden" name="iid" value="<?=$row['customer_id']?>">
