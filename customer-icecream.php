@@ -197,8 +197,8 @@
         while($row = $result->fetch_assoc()) {
         ?>
 
-        $rows = count(num_rows);
-        <input type="text" class="quantity" value="<?=$row?>">
+        
+        <input type="text" class="quantity" value="<?=echo $row?>">
 
         <p class="total">Total: <span id="total">$4.99</span></p>
         <?php
