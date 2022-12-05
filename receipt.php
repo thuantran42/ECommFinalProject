@@ -64,14 +64,14 @@
                     JOIN IceCream ic 
                     ON ic.icecream_id = cic.icecream_id";
                     $result = $conn->query($sql);
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+?>
+  
     
-    echo '<div class="alert alert-success" role="alert"><?$_POST["quantityCheck"]?></div>';
-
+    
    
-    }
-    ?>
+    <?php echo $_POST["quantityCheck"];?>
+    
+    <?php echo $_POST["iName"];?>
 
 
     <form method="post" action="receipt.php">
