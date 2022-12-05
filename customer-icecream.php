@@ -222,20 +222,20 @@
                 <select class="form-select" aria-label="Select Ice Cream" id="icecreamList" name="icd">
                     <?php
                     $icecreamSql = "select * from IceCream order by icecreamName";
-                    $icecreamResult = $conn->query($customerSql);
+                    $icecreamResult = $conn->query($icecreamSql);
                     while($icecreamRow = $icecreamResult->fetch_assoc()) {
                     ?>
                     <option value="<?=$icecreamRow['icecreamName']?>"><?=$icecreamRow['icecreamName']?></option>
                     <?php
                     }
-                    $conn->close();
+                    
                     ?>
                 </select>
 
                 <br />
 
-                <label for="icecreamList" class="form-label">Customer Name</label>
-                <select class="form-select" aria-label="Select Ice Cream" id="icecreamList" name="custName">
+                <label for="customerList" class="form-label">Customer Name</label>
+                <select class="form-select" aria-label="Select Name" id="icecreamList" name="custName">
                     <?php
                     $customerSql = "select * from Customer order by customerName";
                     $customerResult = $conn->query($customerSql);
