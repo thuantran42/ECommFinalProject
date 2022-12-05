@@ -31,6 +31,7 @@
         /*background-position: center center;*/
         /*background-attachment: fixed;*/
     }
+
     .checkout {
         height: 300px;
         width: 400px;
@@ -150,9 +151,6 @@
                         <td><?=$row['icecream_id']?></td>
                         <td><?=$row['icecreamName']?></td>
                         <td>
-                            
-                        
-                            
                         </td>
                         <td></td>
                         <td></td>
@@ -212,48 +210,53 @@
         }
         $conn->close();
         ?>
-        <form method="post" action="receipt.php" >
-            <input type="text" id="quantityCheck1" class="quantity" name ="quantityCheck" value="<?=$rowcount?>"> <!-- Error, fix later-->
+        <form method="post" action="receipt.php">
+            <input type="text" id="quantityCheck1" class="quantity" name="quantityCheck" value="<?=$rowcount?>"> <!-- Error, fix later-->
 
             <p class="total">Total: <span id="total">$</span></p>
             <input type="submit" class="btn btn-primary">
 
-            < / br> 
-                
-                <div class="mb-3">
-    <label for="checkingOut" class="form-label">Check Out</label>
-    <input type="text" class="form-control" id="custName" aria-describedby="nameHelp" name="custName" value="<?=$row['customerName']?>">
-    <div id="nameHelp" class="form-text">Enter the customer name</div>
-  </div>
-  <div class="mb-3">
-  <label for="customerList" class="form-label">Customer</label>
-<select class="form-select" aria-label="Select Customer" id="customerList" name="iid">
-<?php
-    $customerSql = "select * from Customer order by customerName";
-    $customerResult = $conn->query($customerSql);
-    while($customerRow = $customerResult->fetch_assoc()) {
-      if ($customerRow['customer_id'] == $row['customer_id']) {
-        $selText = " selected";
-      } else {
-        $selText = "";
-      }
-?>
-  <option value="<?=$customerRow['customer_id']?>"<?=$selText?>><?=$customerRow['customerName']?></option>
-<?php
-    }
-?>
+            < / br>
+
+            <div class="mb-3">
+                <label for="checkingOut" class="form-label">Check Out</label>
+                <input type="text" class="form-control" id="custName" aria-describedby="nameHelp" name="custName" value="<?=$row['customerName']?>">
+                <div id="nameHelp" class="form-text">Enter the customer name</div>
+            </div>
+            <div class="mb-3">
+                <label for="customerList" class="form-label">Customer</label>
+                <select class="form-select" aria-label="Select Customer" id="customerList" name="iid">
+                    <?php
+                    $customerSql = "select * from Customer order by customerName";
+                    $customerResult = $conn->query($customerSql);
+                    while($customerRow = $customerResult->fetch_assoc()) {
+                    if ($customerRow['customer_id'] == $row['customer_id']) {
+                    $selText = " selected";
+                    } else {
+                    $selText = "";
+                    }
+                    ?>
+                    <option value="<?=$customerRow['customer_id']?>"<?=$selText?>><?=$customerRow['customerName']?></option>
+                    <?php
+                    }
+                    ?>
+                </select>
+            </div>
+            <input type="hidden" name="id" value="<?=$row['section_id']?>">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        
         </form>
-        
-        
-  
-        
+
+
+
+
 
     </div>
 
     <br /> <!-- Space break -->
 
     <a class="btn btn-primary" style="background-color:hotpink;" href="index.php" role="button">Home</a>
-    <a class="btn btn-primary" style="background-color:hotpink;" href="receipt.php" role="button">Receipt</a>
+
 
     <div class="fw-bold ">
         <!-- footer divs -->
