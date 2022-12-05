@@ -71,7 +71,7 @@
    
     <?php echo $_POST["quantityCheck"];?>
     
-     <?php echo $_POST["icecreamName"];?>
+     <?php echo $_POST["icd"];?>
 
 
     
