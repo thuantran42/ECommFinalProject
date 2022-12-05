@@ -12,7 +12,16 @@
   </head>
 
 
-<script>/* Script tag */</script>
+
+<script>
+        $(document).ready(function () {
+            $(".checkout").on("keyup", ".quantity", function () {
+                var price = +$(".price").data("price");
+                var quantity = +$(this).val();
+                $("#total").text("$" + price * quantity);
+            })
+        })
+</script>
 
 <style>
     body {
@@ -77,6 +86,7 @@
         <div class="card-body">
             Number of ice cream bought:
             <?php echo $_POST["quantityCheck"];?> <!-- number of ice creams-->
+            <?php echo $_POST["total"]; ?>
             <br />
             Name of ice cream bought:
             <?php echo $_POST["icd"];?> <!-- Ice cream name -->
@@ -84,6 +94,7 @@
             Customer Name:
             <?php echo $_POST["custName"];?> <!-- Customer Name -->
             <br />
+
 
             Please take a screenshot to get a copy of this receipt.
 
