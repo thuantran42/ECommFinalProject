@@ -216,7 +216,8 @@
             <input type="text" id="quantityCheck1" class="quantity" name="quantityCheck" value="<?=$rowcount?>"> 
 
             <p class="total" >Total: <span id="total">$</span></p>
-            <input name="total" id="trueTotal"/>
+            <input name="total" id="trueTotal" hidden/>
+
 
             <br />
 
