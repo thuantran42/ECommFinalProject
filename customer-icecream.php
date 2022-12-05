@@ -213,10 +213,10 @@
 
         ?>
         <form method="post" action="receipt.php">
-            <input type="text" id="quantityCheck1" class="quantity" name="quantityCheck" value="<?=$rowcount?>"> 
+            <input type="text" id="quantityCheck1" class="quantity" name="quantityCheck" value="<?=$rowcount?>">
 
-            <p class="total" >Total: <span id="total">$</span></p>
-            <input name="total" id="trueTotal" hidden/>
+            <p class="total">Total: <span id="total">$</span></p>
+            <input name="total" id="trueTotal" hidden />
 
 
             <br />
@@ -232,7 +232,7 @@
                     <option value="<?=$icecreamRow['icecreamName']?>"><?=$icecreamRow['icecreamName']?></option>
                     <?php
                     }
-                    
+
                     ?>
                 </select>
 
@@ -265,6 +265,7 @@
 
     <br /> <!-- Space break -->
 
+    <a class="btn btn-primary" style="background-color:hotpink;" href="customer-icecream.php" role="button">Back to Orders</a>
     <a class="btn btn-primary" style="background-color:hotpink;" href="index.php" role="button">Home</a>
 
 
