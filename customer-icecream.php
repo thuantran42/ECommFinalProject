@@ -265,7 +265,7 @@
 
     <br /> <!-- Space break -->
 
-    <a class="btn btn-primary" style="background-color:hotpink;" href="customer-icecream.php" role="button">Back to Orders</a>
+   
     <a class="btn btn-primary" style="background-color:hotpink;" href="index.php" role="button">Home</a>
 
 
