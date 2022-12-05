@@ -42,8 +42,6 @@
         </div>
     </div>-->
     <br /> <!-- Space break -->
-    
-
     <?php
     $servername = "localhost";
     $username = "traeoucr_homework3User";
@@ -76,24 +74,24 @@
                 </span>
             </h1>
         </div>
-            <div class="card-body">
-                Number of ice cream bought:
-                <?php echo $_POST["quantityCheck"];?> <!-- number of ice creams-->
-                <br />
-                Name of ice cream bought:
-                <?php echo $_POST["icd"];?> <!-- Ice cream name -->
-                <br />
-                Customer Name:
-                <?php echo $_POST["custName"];?> <!-- Customer Name -->
-                <br />
+        <div class="card-body">
+            Number of ice cream bought:
+            <?php echo $_POST["quantityCheck"];?> <!-- number of ice creams-->
+            <br />
+            Name of ice cream bought:
+            <?php echo $_POST["icd"];?> <!-- Ice cream name -->
+            <br />
+            Customer Name:
+            <?php echo $_POST["custName"];?> <!-- Customer Name -->
+            <br />
 
-                Please take a screenshot to get a copy of this receipt.
+            Please take a screenshot to get a copy of this receipt.
 
-            </div>
-        
+        </div>
+
     </div>
 
-
+    <a class="btn btn-primary" style="background-color:hotpink;" href="index.php" role="button">Home</a>
 
 
     <div class="fw-bold ">
