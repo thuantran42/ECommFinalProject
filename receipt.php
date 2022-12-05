@@ -74,13 +74,7 @@
     <?php echo $_POST["iName"];?>
 
 
-    <form method="post" action="receipt.php">
-        <input type="text" id="quantityCheck1" class="quantity" value="<?=$rowcount?>"> <!-- Error, fix later-->
-
-        <p class="total">Total: <span id="total">$</span></p>
-        <button class="btn">Submit Order</button>
-
-    </form>
+    
 
 
     <div class="fw-bold ">
