@@ -216,11 +216,11 @@
             <p class="total">Total: <span id="total">$</span></p>
             <input type="submit" class="btn btn-primary">
 
-            < / br>
+           <br /> 
 
             <div class="mb-3">
                 <label for="checkingOut" class="form-label">Check Out</label>
-                <input type="text" class="form-control" id="custName" aria-describedby="nameHelp" name="custName" value="<?=$row['customerName']?>">
+                <input type="text" class="form-control" id="iName" aria-describedby="nameHelp" name="iName" value="<?=$row['customerName']?>">
                 <div id="nameHelp" class="form-text">Enter the customer name</div>
             </div>
             <div class="mb-3">
