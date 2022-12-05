@@ -208,14 +208,14 @@
         } else {
         echo "0 results";
         }
-        
+
         ?>
         <form method="post" action="receipt.php">
             <input type="text" id="quantityCheck1" class="quantity" name="quantityCheck" value="<?=$rowcount?>"> <!-- Error, fix later-->
 
             <p class="total">Total: <span id="total">$</span></p>
 
-           <br /> 
+            <br />
 
             <div class="mb-3">
                 <label for="customerList" class="form-label">Customer</label>
@@ -228,13 +228,13 @@
                     <option value="<?=$customerRow['icecreamName']?>"><?=$customerRow['icecreamName']?></option>
                     <?php
                     }
-                   $conn->close();
+                    $conn->close();
                     ?>
                 </select>
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
-        
+            <button type="submit" style="background-color:hotpink;" class="btn btn-primary">Submit</button>
+
         </form>
 
 
