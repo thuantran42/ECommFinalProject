@@ -212,7 +212,7 @@
             <input type="text" id="quantityCheck1" class="quantity" name ="quantityCheck" value="<?=$rowcount?>"> <!-- Error, fix later-->
 
             <p class="total">Total: <span id="total">$</span></p>
-            <button class="btn">Submit Order</button>
+            <input type="submit" class="btn btn-primary">
 
         </form>
         
