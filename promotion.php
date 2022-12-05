@@ -45,7 +45,7 @@
 
     <div>
         <!-- First Big Div -->
-        >-->
+        
         <div class="card">
             <div class="card-header">
                 <img src="https://www.thedailymeal.com/img/gallery/maines-sweetcream-dairy-launches-crazy-ice-cream-flavors-including-bagel-and-cream-cheese/pepperoni-pizza-ice-cream.jpg" class="card-img-top" alt="pizza ice cream pic" style="height:200px; width:200px;">
