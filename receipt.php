@@ -75,6 +75,7 @@
                     Receipt
                 </span>
             </h1>
+        </div>
             <div class="card-body">
                 Number of ice cream bought:
                 <?php echo $_POST["quantityCheck"];?> <!-- number of ice creams-->
@@ -89,7 +90,7 @@
                 Please take a screenshot to get a copy of this receipt.
 
             </div>
-        </div>
+        
     </div>
 
 
