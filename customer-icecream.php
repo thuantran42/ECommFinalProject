@@ -218,14 +218,30 @@
             <br />
 
             <div class="mb-3">
-                <label for="customerList" class="form-label">Customer</label>
-                <select class="form-select" aria-label="Select Ice Cream" id="customerList" name="icd">
+                <label for="icecreamList" class="form-label">Ice cream</label>
+                <select class="form-select" aria-label="Select Ice Cream" id="icecreamList" name="icd">
                     <?php
-                    $customerSql = "select * from IceCream order by icecreamName";
-                    $customerResult = $conn->query($customerSql);
-                    while($customerRow = $customerResult->fetch_assoc()) {
+                    $icecreamSql = "select * from IceCream order by icecreamName";
+                    $icecreamResult = $conn->query($customerSql);
+                    while($icecreamRow = $icecreamResult->fetch_assoc()) {
                     ?>
-                    <option value="<?=$customerRow['icecreamName']?>"><?=$customerRow['icecreamName']?></option>
+                    <option value="<?=$icecreamRow['icecreamName']?>"><?=$icecreamRow['icecreamName']?></option>
+                    <?php
+                    }
+                    $conn->close();
+                    ?>
+                </select>
+
+                <br />
+
+                <label for="icecreamList" class="form-label">Customer Name</label>
+                <select class="form-select" aria-label="Select Ice Cream" id="icecreamList" name="custName">
+                    <?php
+                    $customerSql = "select * from Customer order by customerName";
+                    $customerResult = $conn->query($customerSql);
+                    while($icecreamRow = $icecreamResult->fetch_assoc()) {
+                    ?>
+                    <option value="<?=$customerRow['customerName']?>"><?=$customerRow['customerName']?></option>
                     <?php
                     }
                     $conn->close();
