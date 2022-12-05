@@ -19,6 +19,7 @@
     })
 </script>
 
+
 </head>
 
 <style>
@@ -33,7 +34,7 @@
     }
 
     .checkout {
-        height: 300px;
+        height: 500px;
         width: 400px;
         margin: 20px auto;
         border: 2px solid black;
