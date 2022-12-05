@@ -15,6 +15,7 @@
             var price = +$(".price").data("price");
             var quantity = +$(this).val();
             $("#total").text("$" + price * quantity);
+            $("#trueTotal").val("$" + price * quantity);
         })
     })
 </script>
@@ -214,7 +215,8 @@
         <form method="post" action="receipt.php">
             <input type="text" id="quantityCheck1" class="quantity" name="quantityCheck" value="<?=$rowcount?>"> 
 
-            <p class="total" name="total">Total: <span id="total">$</span></p>
+            <p class="total" >Total: <span id="total">$</span></p>
+            <input name="total" id="trueTotal"/>
 
             <br />
 
