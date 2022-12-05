@@ -14,13 +14,13 @@
 
 
 <script>
-        $(document).ready(function () {
-            $(".checkout").on("keyup", ".quantity", function () {
-                var price = +$(".price").data("price");
-                var quantity = +$(this).val();
-                $("#total").text("$" + price * quantity);
-            })
+    $(document).ready(function () {
+        $(".checkout").on("keyup", ".quantity", function () {
+            var price = +$(".price").data("price");
+            var quantity = +$(this).val();
+            $("#total").text("$" + price * quantity);
         })
+    })
 </script>
 
 <style>
@@ -73,6 +73,10 @@
     $result = $conn->query($sql);
     ?>
 
+    <div class="alert alert-success">
+        Order confirmed! Your ice cream will be on its way momentarily!
+        Here is your Receipt!
+    </div>
 
 
     <div class="card">
@@ -87,7 +91,7 @@
             Number of ice cream bought:
             <?php echo $_POST["quantityCheck"];?> <!-- number of ice creams-->
             <br />
-            Grand TOTAL: 
+            Grand TOTAL:
             <?php echo $_POST["total"]; ?>
             <br />
             Name of ice cream bought:
@@ -104,7 +108,7 @@
 
     </div>
 
-  <a class="btn btn-primary" style="background-color:hotpink;" href="customer-icecream.php" role="button">Back to Orders</a>
+    <a class="btn btn-primary" style="background-color:hotpink;" href="customer-icecream.php" role="button">Back to Orders</a>
     <a class="btn btn-primary" style="background-color:hotpink;" href="index.php" role="button">Home</a>
 
 
