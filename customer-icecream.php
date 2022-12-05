@@ -214,7 +214,7 @@
         <form method="post" action="receipt.php">
             <input type="text" id="quantityCheck1" class="quantity" name="quantityCheck" value="<?=$rowcount?>"> 
 
-            <p class="total">Total: <span id="total" name="total">$</span></p>
+            <p class="total" name="total">Total: <span id="total">$</span></p>
 
             <br />
 
