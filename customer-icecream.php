@@ -208,7 +208,7 @@
         } else {
         echo "0 results";
         }
-        $conn->close();
+        
         ?>
         <form method="post" action="receipt.php">
             <input type="text" id="quantityCheck1" class="quantity" name="quantityCheck" value="<?=$rowcount?>"> <!-- Error, fix later-->
@@ -228,6 +228,7 @@
                     <option value="<?=$customerRow['icecream_id']?>"><?=$customerRow['icecreamName']?></option>
                     <?php
                     }
+                   $conn->close();
                     ?>
                 </select>
             </div>
