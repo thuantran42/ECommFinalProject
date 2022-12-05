@@ -29,9 +29,20 @@
     <button onclick="printReceipt()">Print Receipt</button>
 
     <script>
-        function printReceipt() {
-            // Code to print the receipt goes here
-        }
-    </script>
+    function printReceipt() {
+        // Create the message to display in the pop-up
+        var message = "Customer: " + "<?php echo $customer_name; ?>" + "\n";
+        message += "Purchased items:\n";
+        <?php
+            // Add the purchased items to the message
+            for ($i = 0; $i < count($purchased_items); $i++) {
+                echo "message += " . $purchased_items[$i] . " - $" . $item_prices[$i] . "\n";
+            }
+        ?>
+
+        // Display the pop-up with the message
+        alert(message);
+    }
+</script>
 </body>
 </html>
