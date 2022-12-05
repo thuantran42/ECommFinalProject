@@ -224,7 +224,6 @@
                     $customerSql = "select * from IceCream order by icecreamName";
                     $customerResult = $conn->query($customerSql);
                     while($customerRow = $customerResult->fetch_assoc()) {
-                    if ($customerRow['icecream_id'] == $row['icecream_id']) {
                     ?>
                     <option value="<?=$customerRow['icecream_id']?>"><?=$customerRow['icecreamName']?></option>
                     <?php
