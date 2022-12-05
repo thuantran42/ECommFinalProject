@@ -86,6 +86,8 @@
         <div class="card-body">
             Number of ice cream bought:
             <?php echo $_POST["quantityCheck"];?> <!-- number of ice creams-->
+            <br />
+            Grand TOTAL: 
             <?php echo $_POST["total"]; ?>
             <br />
             Name of ice cream bought:
