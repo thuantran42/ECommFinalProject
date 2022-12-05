@@ -243,6 +243,7 @@
 
 
     <a class="btn btn-primary" style="background-color:hotpink;" href="index.php" role="button">Home</a> <!-- Bottom Home Button-->
+    <a class="btn btn-primary" style="background-color:hotpink;" href="icecream.php" role="button">Go to Ice Cream</a>
 
     <div class="fw-bold ">
         <!-- footer divs -->
