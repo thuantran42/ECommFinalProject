@@ -225,7 +225,7 @@
                     $customerResult = $conn->query($customerSql);
                     while($customerRow = $customerResult->fetch_assoc()) {
                     ?>
-                    <option value="<?=$customerRow['icecream_id']?>"><?=$customerRow['icecreamName']?></option>
+                    <option value="<?=$customerRow['icecream_Name']?>"><?=$customerRow['icecreamName']?></option>
                     <?php
                     }
                    $conn->close();
