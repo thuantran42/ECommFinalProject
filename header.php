@@ -47,7 +47,7 @@
                             <li><a class="dropdown-item" href="customer.php">Register!</a></li>
                             <li><a class="dropdown-item" href="icecream.php">Create your Ice Scream!</a></li>
                             <li><a class="dropdown-item" href="customer-icecream.php">Orders</a></li>
-                            <li><a class="dropdown-item" href="deals.php">Deals</a></li>
+                            
                             <li><a class="dropdown-item" href="promotion.php">Promotion</a></li>
 
 
