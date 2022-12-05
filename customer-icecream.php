@@ -149,7 +149,34 @@
                     <tr>
                         <td><?=$row['icecream_id']?></td>
                         <td><?=$row['icecreamName']?></td>
-                        <td></td>
+                        <td>
+                            
+                         
+<form method="post" action="receipt.php">
+  <div class="mb-3">
+    <label for="checkingOut" class="form-label">Check Out</label>
+    <input type="text" class="form-control" id="custName" aria-describedby="nameHelp" name="custName" value="<?=$row['customerName']?>">
+    <div id="nameHelp" class="form-text">Enter the customer name</div>
+  </div>
+  <div class="mb-3">
+  <label for="customerList" class="form-label">Customer</label>
+<select class="form-select" aria-label="Select Customer" id="customerList" name="iid">
+<?php
+    $customerSql = "select * from Customer order by customerName";
+    $customerResult = $conn->query($customerSql);
+    while($customerRow = $customerResult->fetch_assoc()) {
+      if ($customerRow['customer_id'] == $row['customer_id']) {
+        $selText = " selected";
+      } else {
+        $selText = "";
+      }
+?>
+  <option value="<?=$customerRow['customer_id']?>"<?=$selText?>><?=$customerRow['customerName']?></option>
+<?php
+    }
+?>
+                            
+                        </td>
                         <td></td>
                         <td></td>
                         <td>
