@@ -46,78 +46,89 @@
 
     <?php
     $servername = "localhost";
-                    $username = "traeoucr_homework3User";
-                    $password = "mysqltt1024332";
-                    $dbname = "traeoucr_ecommfinalproject";
+    $username = "traeoucr_homework3User";
+    $password = "mysqltt1024332";
+    $dbname = "traeoucr_ecommfinalproject";
 
-                    // Create connection
-                    $conn = new mysqli($servername, $username, $password, $dbname);
-                    // Check connection
-                    if ($conn->connect_error) {
-                    die("Connection failed: " . $conn->connect_error);
-                    }
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+    }
 
-                    $sql = "select c.customer_id, customerName, icecreamName 
-                    FROM Customer c 
-                    JOIN CustomerIceCream cic 
-                    ON c.customer_id = cic.customer_id 
-                    JOIN IceCream ic 
-                    ON ic.icecream_id = cic.icecream_id";
-                    $result = $conn->query($sql);
-?>
-  
-    
-    
-   
-    <?php echo $_POST["quantityCheck"];?>
-    
-     <?php echo $_POST["icd"];?>
+    $sql = "select c.customer_id, customerName, icecreamName
+    FROM Customer c
+    JOIN CustomerIceCream cic
+    ON c.customer_id = cic.customer_id
+    JOIN IceCream ic
+    ON ic.icecream_id = cic.icecream_id";
+    $result = $conn->query($sql);
+    ?>
 
 
-    
+
+    <div class="card">
+        <div class="card-header">
+            <h1><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">
+                    Receipt
+                </span></h1>
+            <div class="card-body">
+                Number of ice cream bought:
+                <?php echo $_POST["quantityCheck"];?> <!-- number of ice creams-->
+                Name of ice cream bought:
+                <?php echo $_POST["icd"];?> <!-- Ice cream name -->
+                Customer Name: 
+                <?php echo $_POST["custName"];?> <!-- Customer Name -->
+
+            </div>
+         </div>
+    </div>
 
 
-    <div class="fw-bold ">
-        <!-- footer divs -->
-        <hr />
-        <div>
-            <!-- first row divs in footer-->
-            <div style="width: 400px; float: left;">
-                Privacy Policy
+
+
+        <div class="fw-bold ">
+            <!-- footer divs -->
+            <hr />
+            <div>
+                <!-- first row divs in footer-->
+                <div style="width: 400px; float: left;">
+                    Privacy Policy
+                </div>
+
+                <div style="width:400px; float:left;">
+                    Terms & Conditions
+                </div>
+
+                <div style="width: 400px; float: left;">
+                    Do Not Sell or Share My Personal Information
+                </div>
+
             </div>
 
-            <div style="width:400px; float:left;">
-                Terms & Conditions
+
+
+            <div>
+                <div style="width: 400px; float: left;">
+                    Cookie Settings
+                </div>
+
+                <div style="width: 400px; float: left;">
+                    @2018 - 2022 The Ice Scream Comapny Inc.
+                </div>
+
             </div>
 
-            <div style="width: 400px; float: left;">
-                Do Not Sell or Share My Personal Information
-            </div>
+
 
         </div>
 
 
 
-        <div>
-            <div style="width: 400px; float: left;">
-                Cookie Settings
-            </div>
-
-            <div style="width: 400px; float: left;">
-                @2018 - 2022 The Ice Scream Comapny Inc.
-            </div>
-
-        </div>
 
 
 
-    </div>
-
-
-    </div>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
