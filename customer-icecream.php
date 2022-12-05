@@ -239,7 +239,7 @@
                     <?php
                     $customerSql = "select * from Customer order by customerName";
                     $customerResult = $conn->query($customerSql);
-                    while($icecreamRow = $icecreamResult->fetch_assoc()) {
+                    while($customerRow = $customerResult->fetch_assoc()) {
                     ?>
                     <option value="<?=$customerRow['customerName']?>"><?=$customerRow['customerName']?></option>
                     <?php
