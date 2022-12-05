@@ -45,46 +45,71 @@
 
     <div>
         <!-- First Big Div -->
-        
+        >-->
+        <div class="card">
+            <div class="card-header">
+                <img src="https://www.thedailymeal.com/img/gallery/maines-sweetcream-dairy-launches-crazy-ice-cream-flavors-including-bagel-and-cream-cheese/pepperoni-pizza-ice-cream.jpg" class="card-img-top" alt="pizza ice cream pic" style="height:200px; width:200px;">
 
+                <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">Try this flavor!</span>
+            </div>
+            <div class="card-body">
+                Can't think of an ice cream you want?
+                <br />
+                Look no further!
+                <br />
+                Here, we have the pizza ice cream in our shop! 
+                <br />
+                Sounds crazy and very weird, right?
+                <br />
+                Hear us out...
+                <br />
+                The pizza ice cream features ingredients such as mainly cherry and lemon. <br />
+                The cherry take in form of iced pepperonis and the lemon will take part <br />
+                as the base of the ice cream. <br />
+                <br />
+                What are you waiting for? <br />
+                Come and try it now! <br />
+
+             </div>
+         </div>
 
 
 
         <div class="fw-bold ">
             <!-- footer divs -->
-            <hr />
-            <div>
-                <!-- first row divs in footer-->
-                <div style="width: 400px; float: left;">
-                    Privacy Policy
-                </div>
-
-                <div style="width:400px; float:left;">
-                    Terms & Conditions
-                </div>
-
-                <div style="width: 400px; float: left;">
-                    Do Not Sell or Share My Personal Information
-                </div>
-
+        <hr />
+        <div>
+            <!-- first row divs in footer-->
+            <div style="width: 400px; float: left;">
+                Privacy Policy
             </div>
 
-
-
-            <div>
-                <div style="width: 400px; float: left;">
-                    Cookie Settings
-                </div>
-
-                <div style="width: 400px; float: left;">
-                    @2018 - 2022 The Ice Scream Comapny Inc.
-                </div>
-
+            <div style="width:400px; float:left;">
+                Terms & Conditions
             </div>
 
-
+            <div style="width: 400px; float: left;">
+                Do Not Sell or Share My Personal Information
+            </div>
 
         </div>
+
+
+
+        <div>
+            <div style="width: 400px; float: left;">
+                Cookie Settings
+            </div>
+
+            <div style="width: 400px; float: left;">
+                @2018 - 2022 The Ice Scream Comapny Inc.
+            </div>
+
+        </div>
+
+
+
+    </div>
 
 
     </div>
@@ -94,4 +119,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
-
