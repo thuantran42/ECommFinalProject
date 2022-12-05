@@ -42,7 +42,7 @@
         </div>
     </div>-->
     <br /> <!-- Space break -->
-    Receipt
+    
 
     <?php
     $servername = "localhost";
@@ -70,65 +70,72 @@
 
     <div class="card">
         <div class="card-header">
-            <h1><span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">
+            <h1>
+                <span onmouseover="style.color='blue'" onmouseout="style.color='pink'" style="color: pink">
                     Receipt
-                </span></h1>
+                </span>
+            </h1>
             <div class="card-body">
                 Number of ice cream bought:
                 <?php echo $_POST["quantityCheck"];?> <!-- number of ice creams-->
+                <br />
                 Name of ice cream bought:
                 <?php echo $_POST["icd"];?> <!-- Ice cream name -->
-                Customer Name: 
+                <br />
+                Customer Name:
                 <?php echo $_POST["custName"];?> <!-- Customer Name -->
+                <br />
+
+                Please take a screenshot to get a copy of this receipt.
 
             </div>
-         </div>
+        </div>
     </div>
 
 
 
 
-        <div class="fw-bold ">
-            <!-- footer divs -->
-            <hr />
-            <div>
-                <!-- first row divs in footer-->
-                <div style="width: 400px; float: left;">
-                    Privacy Policy
-                </div>
-
-                <div style="width:400px; float:left;">
-                    Terms & Conditions
-                </div>
-
-                <div style="width: 400px; float: left;">
-                    Do Not Sell or Share My Personal Information
-                </div>
-
+    <div class="fw-bold ">
+        <!-- footer divs -->
+        <hr />
+        <div>
+            <!-- first row divs in footer-->
+            <div style="width: 400px; float: left;">
+                Privacy Policy
             </div>
 
-
-
-            <div>
-                <div style="width: 400px; float: left;">
-                    Cookie Settings
-                </div>
-
-                <div style="width: 400px; float: left;">
-                    @2018 - 2022 The Ice Scream Comapny Inc.
-                </div>
-
+            <div style="width:400px; float:left;">
+                Terms & Conditions
             </div>
 
-
+            <div style="width: 400px; float: left;">
+                Do Not Sell or Share My Personal Information
+            </div>
 
         </div>
 
 
 
+        <div>
+            <div style="width: 400px; float: left;">
+                Cookie Settings
+            </div>
+
+            <div style="width: 400px; float: left;">
+                @2018 - 2022 The Ice Scream Comapny Inc.
+            </div>
+
+        </div>
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
