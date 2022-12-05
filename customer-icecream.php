@@ -214,35 +214,25 @@
             <input type="text" id="quantityCheck1" class="quantity" name="quantityCheck" value="<?=$rowcount?>"> <!-- Error, fix later-->
 
             <p class="total">Total: <span id="total">$</span></p>
-            <input type="submit" class="btn btn-primary">
 
            <br /> 
 
             <div class="mb-3">
-                <label for="checkingOut" class="form-label">Check Out</label>
-                <input type="text" class="form-control" id="iName" aria-describedby="nameHelp" name="iName" value="<?=$row['customerName']?>">
-                <div id="nameHelp" class="form-text">Enter the customer name</div>
-            </div>
-            <div class="mb-3">
                 <label for="customerList" class="form-label">Customer</label>
-                <select class="form-select" aria-label="Select Customer" id="customerList" name="iid">
+                <select class="form-select" aria-label="Select Ice Cream" id="customerList" name="iid">
                     <?php
-                    $customerSql = "select * from Customer order by customerName";
+                    $customerSql = "select * from IceCream order by icecreamName";
                     $customerResult = $conn->query($customerSql);
                     while($customerRow = $customerResult->fetch_assoc()) {
-                    if ($customerRow['customer_id'] == $row['customer_id']) {
-                    $selText = " selected";
-                    } else {
-                    $selText = "";
-                    }
+                    if ($customerRow['icecream_id'] == $row['icecream_id']) {
                     ?>
-                    <option value="<?=$customerRow['customer_id']?>"<?=$selText?>><?=$customerRow['customerName']?></option>
+                    <option value="<?=$customerRow['icecream_id']?>"><?=$customerRow['icecreamName']?></option>
                     <?php
                     }
                     ?>
                 </select>
             </div>
-            <input type="hidden" name="id" value="<?=$row['section_id']?>">
+
             <button type="submit" class="btn btn-primary">Submit</button>
         
         </form>
