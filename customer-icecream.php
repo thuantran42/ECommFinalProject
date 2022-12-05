@@ -219,7 +219,7 @@
 
             <div class="mb-3">
                 <label for="customerList" class="form-label">Customer</label>
-                <select class="form-select" aria-label="Select Ice Cream" id="customerList" name="iid">
+                <select class="form-select" aria-label="Select Ice Cream" id="customerList" name="icd">
                     <?php
                     $customerSql = "select * from IceCream order by icecreamName";
                     $customerResult = $conn->query($customerSql);
